@@ -3,76 +3,59 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Relatório Semanal — 06/07/2026 — Aqui, Mkt!</title>
+<title>Relatório Semanal — 20/07/2026 — Aqui, Mkt!</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --green: #00ff01;
-    --green-dim: rgba(0,255,1,0.12);
-    --green-glow: rgba(0,255,1,0.25);
-    --black: #080808;
-    --surface: #111111;
-    --surface-2: #181818;
-    --surface-3: #222222;
-    --border: rgba(255,255,255,0.07);
-    --border-green: rgba(0,255,1,0.3);
-    --white: #ffffff;
-    --muted: rgba(255,255,255,0.45);
-    --text: rgba(255,255,255,0.88);
-    --radius: 16px;
-    --radius-sm: 10px;
-    --k-green: #00ff01;
-    --k-green-bg: rgba(0,255,1,0.08);
-    --k-green-border: rgba(0,255,1,0.35);
-    --k-yellow: #ffc800;
-    --k-yellow-bg: rgba(255,200,0,0.08);
-    --k-yellow-border: rgba(255,200,0,0.35);
-    --k-red: #ff3c3c;
-    --k-red-bg: rgba(255,60,60,0.08);
-    --k-red-border: rgba(255,60,60,0.35);
+    --green:#00ff01;--green-dim:rgba(0,255,1,0.12);--green-glow:rgba(0,255,1,0.25);
+    --black:#080808;--surface:#111111;--surface-2:#181818;--surface-3:#222222;
+    --border:rgba(255,255,255,0.07);--border-green:rgba(0,255,1,0.3);
+    --white:#ffffff;--muted:rgba(255,255,255,0.45);--text:rgba(255,255,255,0.88);
+    --radius:16px;--radius-sm:10px;
+    --k-green:#00ff01;--k-green-bg:rgba(0,255,1,0.08);--k-green-border:rgba(0,255,1,0.35);
+    --k-yellow:#ffc800;--k-yellow-bg:rgba(255,200,0,0.08);--k-yellow-border:rgba(255,200,0,0.35);
+    --k-red:#ff3c3c;--k-red-bg:rgba(255,60,60,0.08);--k-red-border:rgba(255,60,60,0.35);
   }
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
-  body { background: var(--black); color: var(--text); font-family: 'Inter', sans-serif; font-size: 15px; line-height: 1.7; min-height: 100vh; overflow-x: hidden; }
-  ::-webkit-scrollbar { width: 4px; }
-  ::-webkit-scrollbar-track { background: var(--black); }
-  ::-webkit-scrollbar-thumb { background: var(--green); border-radius: 2px; }
-  body::before { content: ''; position: fixed; inset: 0; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E"); pointer-events: none; z-index: 0; opacity: 0.4; }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--black);color:var(--text);font-family:'Inter',sans-serif;font-size:15px;line-height:1.7;min-height:100vh;overflow-x:hidden}
+  ::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:var(--black)}::-webkit-scrollbar-thumb{background:var(--green);border-radius:2px}
+  body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");pointer-events:none;z-index:0;opacity:0.4}
 
-  .progress-bar { position: fixed; top: 0; left: 0; height: 3px; background: var(--green); box-shadow: 0 0 10px var(--green); z-index: 1000; width: 0%; transition: width 0.1s linear; }
+  .progress-bar{position:fixed;top:0;left:0;height:3px;background:var(--green);box-shadow:0 0 10px var(--green);z-index:1000;width:0%;transition:width .1s linear}
 
-  .nav { position: sticky; top: 0; z-index: 100; background: rgba(8,8,8,0.88); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); padding: 0 24px; }
-  .nav-inner { max-width: 960px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 56px; gap: 16px; }
-  .nav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-  .nav-brand img { width: 44px; height: auto; display: block; }
-  .nav-badge { padding: 4px 12px; background: var(--green-dim); border: 1px solid var(--border-green); border-radius: 100px; font-size: 11px; font-weight: 600; color: var(--green); letter-spacing: 0.08em; white-space: nowrap; }
+  .nav{position:sticky;top:0;z-index:100;background:rgba(8,8,8,0.88);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:0 24px}
+  .nav-inner{max-width:960px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:56px;gap:16px}
+  .nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+  .nav-brand img{width:44px;height:auto;display:block}
+  .nav-badge{padding:4px 12px;background:var(--green-dim);border:1px solid var(--border-green);border-radius:100px;font-size:11px;font-weight:600;color:var(--green);letter-spacing:.08em;white-space:nowrap}
 
-  .hero { position: relative; padding: 72px 24px 56px; text-align: center; overflow: hidden; }
-  .hero::before { content: ''; position: absolute; top: -100px; left: 50%; transform: translateX(-50%); width: 500px; height: 500px; background: radial-gradient(circle, rgba(0,255,1,0.12) 0%, transparent 70%); pointer-events: none; animation: pulse 6s ease-in-out infinite; }
-  @keyframes pulse { 0%,100%{opacity:.6;transform:translateX(-50%) scale(1)}50%{opacity:1;transform:translateX(-50%) scale(1.08)} }
-  .hero-logo { margin-bottom: 28px; animation: fadeDown 0.7s ease both; }
-  .hero-logo img { width: 110px; height: auto; display: block; margin: 0 auto; }
-  .hero-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--green); margin-bottom: 14px; animation: fadeDown 0.8s 0.1s ease both; }
-  .hero-title { font-family: 'Syne', sans-serif; font-size: clamp(32px,7vw,60px); font-weight: 800; line-height: 1.05; letter-spacing: -0.02em; color: var(--white); margin-bottom: 16px; animation: fadeDown 0.8s 0.2s ease both; }
-  .hero-title span { color: var(--green); }
-  .hero-sub { font-size: 15px; color: var(--muted); max-width: 440px; margin: 0 auto 36px; animation: fadeDown 0.8s 0.3s ease both; }
-  .hero-meta { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; animation: fadeDown 0.8s 0.4s ease both; }
-  .meta-pill { display: inline-flex; align-items: center; gap: 7px; padding: 7px 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 100px; font-size: 12px; color: var(--muted); transition: border-color .2s,color .2s; }
-  .meta-pill:hover { border-color: var(--border-green); color: var(--white); }
-  @keyframes fadeDown { from{opacity:0;transform:translateY(-18px)}to{opacity:1;transform:translateY(0)} }
+  .hero{position:relative;padding:72px 24px 56px;text-align:center;overflow:hidden}
+  .hero::before{content:'';position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:500px;height:500px;background:radial-gradient(circle,rgba(0,255,1,0.12) 0%,transparent 70%);pointer-events:none;animation:pulse 6s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:.6;transform:translateX(-50%) scale(1)}50%{opacity:1;transform:translateX(-50%) scale(1.08)}}
+  .hero-logo{margin-bottom:28px;animation:fadeDown .7s ease both}
+  .hero-logo img{width:110px;height:auto;display:block;margin:0 auto}
+  .hero-eyebrow{font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--green);margin-bottom:14px;animation:fadeDown .8s .1s ease both}
+  .hero-title{font-family:'Syne',sans-serif;font-size:clamp(32px,7vw,60px);font-weight:800;line-height:1.05;letter-spacing:-.02em;color:var(--white);margin-bottom:16px;animation:fadeDown .8s .2s ease both}
+  .hero-title span{color:var(--green)}
+  .hero-sub{font-size:15px;color:var(--muted);max-width:460px;margin:0 auto 36px;animation:fadeDown .8s .3s ease both}
+  .hero-meta{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;animation:fadeDown .8s .4s ease both}
+  .meta-pill{display:inline-flex;align-items:center;gap:7px;padding:7px 16px;background:var(--surface);border:1px solid var(--border);border-radius:100px;font-size:12px;color:var(--muted);transition:border-color .2s,color .2s}
+  .meta-pill:hover{border-color:var(--border-green);color:var(--white)}
+  @keyframes fadeDown{from{opacity:0;transform:translateY(-18px)}to{opacity:1;transform:translateY(0)}}
 
-  .divider { width: 100%; max-width: 960px; margin: 0 auto; height: 1px; background: linear-gradient(90deg,transparent,var(--border-green),transparent); }
-  .container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
-  .section-label { font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--green); margin-bottom: 8px; }
-  .section-title { font-family: 'Syne', sans-serif; font-size: clamp(20px,3.5vw,28px); font-weight: 700; color: var(--white); margin-bottom: 24px; letter-spacing: -0.01em; }
+  .divider{width:100%;max-width:960px;margin:0 auto;height:1px;background:linear-gradient(90deg,transparent,var(--border-green),transparent)}
+  .container{max-width:960px;margin:0 auto;padding:0 24px}
+  .section-label{font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--green);margin-bottom:8px}
+  .section-title{font-family:'Syne',sans-serif;font-size:clamp(20px,3.5vw,28px);font-weight:700;color:var(--white);margin-bottom:24px;letter-spacing:-.01em}
 
   /* LEGEND */
-  .legend-section { padding: 48px 0 32px; }
-  .legend-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; }
+  .legend-section{padding:48px 0 32px}
+  .legend-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
   @media(max-width:560px){.legend-grid{grid-template-columns:1fr}}
-  .legend-card { display: flex; align-items: flex-start; gap: 14px; padding: 18px 20px; border-radius: var(--radius); border: 1px solid; }
+  .legend-card{display:flex;align-items:flex-start;gap:14px;padding:18px 20px;border-radius:var(--radius);border:1px solid}
   .legend-card.green{background:var(--k-green-bg);border-color:var(--k-green-border)}
   .legend-card.yellow{background:var(--k-yellow-bg);border-color:var(--k-yellow-border)}
   .legend-card.red{background:var(--k-red-bg);border-color:var(--k-red-border)}
@@ -81,9 +64,7 @@
   .legend-card.yellow .legend-dot{background:var(--k-yellow);box-shadow:0 0 8px var(--k-yellow)}
   .legend-card.red .legend-dot{background:var(--k-red);box-shadow:0 0 8px var(--k-red)}
   .legend-label{font-family:'Syne',sans-serif;font-size:13px;font-weight:700;margin-bottom:3px}
-  .legend-card.green .legend-label{color:var(--k-green)}
-  .legend-card.yellow .legend-label{color:var(--k-yellow)}
-  .legend-card.red .legend-label{color:var(--k-red)}
+  .legend-card.green .legend-label{color:var(--k-green)}.legend-card.yellow .legend-label{color:var(--k-yellow)}.legend-card.red .legend-label{color:var(--k-red)}
   .legend-desc{font-size:12px;color:var(--muted);line-height:1.5}
   .summary-row{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 0}
   .summary-pill{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:100px;font-size:13px;font-weight:600;border:1px solid}
@@ -91,9 +72,7 @@
   .summary-pill.yellow{background:var(--k-yellow-bg);border-color:var(--k-yellow-border);color:var(--k-yellow)}
   .summary-pill.red{background:var(--k-red-bg);border-color:var(--k-red-border);color:var(--k-red)}
   .summary-pill .dot{width:8px;height:8px;border-radius:50%}
-  .summary-pill.green .dot{background:var(--k-green)}
-  .summary-pill.yellow .dot{background:var(--k-yellow)}
-  .summary-pill.red .dot{background:var(--k-red)}
+  .summary-pill.green .dot{background:var(--k-green)}.summary-pill.yellow .dot{background:var(--k-yellow)}.summary-pill.red .dot{background:var(--k-red)}
 
   /* KANBAN */
   .kanban-section{padding:16px 0 64px}
@@ -127,7 +106,7 @@
   .card-deadline{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--muted);margin-bottom:8px}
   .deadline-date{font-weight:600;font-size:13px}
   .client-card.green .deadline-date{color:var(--k-green)}.client-card.yellow .deadline-date{color:var(--k-yellow)}.client-card.red .deadline-date{color:var(--k-red)}
-  .card-note{display:flex;align-items:flex-start;gap:7px;padding:8px 10px;border-radius:8px;font-size:11px;color:var(--muted);line-height:1.5;margin-top:10px}
+  .card-note{padding:8px 10px;border-radius:8px;font-size:11px;color:var(--muted);line-height:1.5;margin-top:10px}
   .card-note.green{background:var(--k-green-bg)}.card-note.yellow{background:var(--k-yellow-bg)}.card-note.red{background:var(--k-red-bg)}
   .days-bar-wrap{margin-top:10px}
   .days-bar-label{display:flex;justify-content:space-between;font-size:10px;color:var(--muted);margin-bottom:5px}
@@ -135,10 +114,35 @@
   .days-bar-fill{height:100%;border-radius:2px;transition:width 1s cubic-bezier(.4,0,.2,1) .3s;width:0%}
   .client-card.green .days-bar-fill{background:var(--k-green)}.client-card.yellow .days-bar-fill{background:var(--k-yellow)}.client-card.red .days-bar-fill{background:var(--k-red)}
 
-  .recording-tag{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:8px;background:rgba(255,200,0,0.1);border:1px solid rgba(255,200,0,0.4);font-size:11px;font-weight:600;color:#ffc800;margin-top:10px;line-height:1.4}
-  .syncora-alert{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:8px;background:rgba(160,100,255,0.1);border:1px solid rgba(160,100,255,0.35);font-size:11px;font-weight:600;color:#b07fff;margin-top:6px;line-height:1.4}
-  .whatsapp-tag{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:8px;background:rgba(37,211,102,0.1);border:1px solid rgba(37,211,102,0.35);font-size:11px;font-weight:600;color:#25d366;margin-top:6px;line-height:1.4}
+  /* TAGS */
+  .align-tag{display:flex;align-items:flex-start;gap:7px;padding:8px 10px;border-radius:8px;background:rgba(100,160,255,0.08);border:1px solid rgba(100,160,255,0.3);font-size:11px;color:#7ab4ff;line-height:1.5;margin-top:8px}
   .pending-tag{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:8px;background:rgba(100,160,255,0.1);border:1px solid rgba(100,160,255,0.35);font-size:11px;font-weight:600;color:#64a0ff;margin-top:6px;line-height:1.4}
+  .whatsapp-tag{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:8px;background:rgba(37,211,102,0.1);border:1px solid rgba(37,211,102,0.35);font-size:11px;font-weight:600;color:#25d366;margin-top:6px;line-height:1.4}
+
+  /* ALINHAMENTOS SECTION */
+  .align-section{padding:64px 0;border-top:1px solid var(--border)}
+  .align-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:16px}
+  @media(max-width:560px){.align-grid{grid-template-columns:1fr}}
+  .align-card{background:var(--surface);border:1px solid rgba(100,160,255,0.25);border-radius:var(--radius);padding:22px;position:relative;overflow:hidden;opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease,border-color .2s,box-shadow .2s}
+  .align-card.visible{opacity:1;transform:translateY(0)}
+  .align-card:hover{border-color:rgba(100,160,255,0.5);box-shadow:0 0 24px rgba(100,160,255,0.07)}
+  .align-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:#7ab4ff;border-radius:3px 0 0 3px}
+  .align-header{display:flex;align-items:center;gap:12px;margin-bottom:16px;padding-bottom:14px;border-bottom:1px solid var(--border)}
+  .align-avatar{width:38px;height:38px;border-radius:10px;background:rgba(100,160,255,0.12);border:1px solid rgba(100,160,255,0.3);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+  .align-client-name{font-family:'Syne',sans-serif;font-size:15px;font-weight:700;color:var(--white)}
+  .align-subtitle{font-size:11px;color:var(--muted)}
+  .align-rules{display:flex;flex-direction:column;gap:10px}
+  .align-rule{display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--text);line-height:1.5}
+  .rule-dot{width:6px;height:6px;border-radius:50%;background:#7ab4ff;flex-shrink:0;margin-top:6px}
+
+  /* SCHEDULE INTERCALATION */
+  .schedule-intercal{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}
+  .day-block{background:var(--surface-2);border-radius:10px;padding:10px;text-align:center;border:1px solid var(--border)}
+  .day-label{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+  .day-content{font-size:12px;font-weight:600;color:var(--white);line-height:1.4}
+  .day-block.highlight{border-color:var(--border-green);background:var(--green-dim)}
+  .day-block.highlight .day-label{color:var(--green)}
+  .day-block.highlight .day-content{color:var(--green)}
 
   /* BOM JARDIM */
   .bjd-section{padding:64px 0;border-top:1px solid var(--border)}
@@ -147,7 +151,6 @@
   .bjd-header-title{font-family:'Syne',sans-serif;font-size:15px;font-weight:700;color:#ff6400;margin-bottom:3px}
   .bjd-header-desc{font-size:12px;color:var(--muted);line-height:1.5}
   .bjd-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
-  @media(max-width:560px){.bjd-grid{grid-template-columns:1fr}}
   .bjd-card{background:var(--surface);border-radius:var(--radius);padding:20px 22px;position:relative;overflow:hidden;opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease,border-color .2s,box-shadow .2s;border:1px solid}
   .bjd-card.visible{opacity:1;transform:translateY(0)}
   .bjd-card.bjd-red{border-color:rgba(255,100,0,0.3)}.bjd-card.bjd-red:hover{border-color:rgba(255,100,0,.55);box-shadow:0 0 20px rgba(255,100,0,.08)}
@@ -161,6 +164,7 @@
   .bjd-badge.green{background:var(--k-green-bg);color:var(--k-green);border:1px solid var(--k-green-border)}
   .bjd-note{font-size:12px;color:var(--muted);line-height:1.5;padding:8px 10px;border-radius:8px;margin-top:8px}
   .bjd-card.bjd-red .bjd-note{background:rgba(255,100,0,0.05)}.bjd-card.bjd-green .bjd-note{background:var(--k-green-bg)}
+  .recording-tag{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:8px;background:rgba(255,200,0,0.1);border:1px solid rgba(255,200,0,0.4);font-size:11px;font-weight:600;color:#ffc800;margin-top:10px;line-height:1.4}
 
   /* FOOTER */
   .footer{padding:40px 24px;text-align:center;border-top:1px solid var(--border)}
@@ -170,7 +174,6 @@
   @media(max-width:640px){
     .hero{padding:56px 16px 44px}
     .kanban-section{padding:16px 0 48px}
-    .nav-links{display:none}
   }
 </style>
 </head>
@@ -181,23 +184,23 @@
 <nav class="nav">
   <div class="nav-inner">
     <a href="#top" class="nav-brand">
-      <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iQ2FtYWRhXzIiIGRhdGEtbmFtZT0iQ2FtYWRhIDIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDI1MC4zNSAyMTguMTUiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZvbnQtc2l6ZTogNzYuNzdweDsKICAgICAgfQoKICAgICAgLmNscy0xLCAuY2xzLTIsIC5jbHMtMywgLmNscy00LCAuY2xzLTUgewogICAgICAgIGZpbGw6ICNmZmY7CiAgICAgIH0KCiAgICAgIC5jbHMtMSwgLmNscy0yLCAuY2xzLTQsIC5jbHMtNSB7CiAgICAgICAgZm9udC1mYW1pbHk6IE5lZ3JpdGFQcm8sICdOZWdyaXRhIFBybyc7CiAgICAgIH0KCiAgICAgIC5jbHMtMiB7CiAgICAgICAgZm9udC1zaXplOiA3Ni43N3B4OwogICAgICB9CgogICAgICAuY2xzLTMgewogICAgICAgIGZvbnQtZmFtaWx5OiBTRlByb0Rpc3BsYXktUmVndWxhciwgJ1NGIFBybyBEaXNwbGF5JzsKICAgICAgICBmb250LXNpemU6IDI1LjQ4cHg7CiAgICAgIH0KCiAgICAgIC5jbHMtNCB7CiAgICAgICAgZm9udC1zaXplOiAxMTQuNzZweDsKICAgICAgfQoKICAgICAgLmNscy02IHsKICAgICAgICBmaWxsOiAjMDBmZjAxOwogICAgICAgIGZpbGwtcnVsZTogZXZlbm9kZDsKICAgICAgfQoKICAgICAgLmNscy01IHsKICAgICAgICBmb250LXNpemU6IDExNC43NnB4OwogICAgICB9CiAgICA8L3N0eWxlPgogIDwvZGVmcz4KICA8ZyBpZD0iQ2FtYWRhXzEtMiIgZGF0YS1uYW1lPSJDYW1hZGEgMSI+CiAgICA8Zz4KICAgICAgPHRleHQgY2xhc3M9ImNscy01IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMi4yIDE2MC42KSByb3RhdGUoLTcuMTkpIj48dHNwYW4geD0iMCIgeT0iMCI+TTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDk4LjA3IDE1MC40Mykgcm90YXRlKC43KSI+PHRzcGFuIHg9IjAiIHk9IjAiPms8L3RzcGFuPjwvdGV4dD4KICAgICAgPHRleHQgY2xhc3M9ImNscy01IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNTguOCAxNTEuMzkpIHJvdGF0ZSg2LjQ4KSI+PHRzcGFuIHg9IjAiIHk9IjAiPnQ8L3RzcGFuPjwvdGV4dD4KICAgICAgPHRleHQgY2xhc3M9ImNscy00IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMDUuNzUgMTU3LjAzKSByb3RhdGUoMTAuNDEpIj48dHNwYW4geD0iMCIgeT0iMCI+ITwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDY5LjExIDY3LjY5KSByb3RhdGUoLTMuMDUpIj48dHNwYW4geD0iMCIgeT0iMCI+QTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDExMi4yOCA2NS4zNSkgcm90YXRlKC43MykiPjx0c3BhbiB4PSIwIiB5PSIwIj5xPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTUxLjYxIDY1Ljc5KSByb3RhdGUoNC40NSkiPjx0c3BhbiB4PSIwIiB5PSIwIj51PC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTkxLjI3IDY5LjExKSByb3RhdGUoNy4xMSkiPjx0c3BhbiB4PSIwIiB5PSIwIj5pPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjA4LjExIDcxLjIxKSByb3RhdGUoOC41OSkiPjx0c3BhbiB4PSIwIiB5PSIwIj4sPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEuMzEgMjA3LjM0KSI+PHRzcGFuIHg9IjAiIHk9IjAiPk08L3RzcGFuPjwvdGV4dD4KICAgICAgPHRleHQgY2xhc3M9ImNscy0zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMi4wOSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+YTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ0Ljg1IDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj5yPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTIuNjcgMjA3LjM0KSI+PHRzcGFuIHg9IjAiIHk9IjAiPms8L3RzcGFuPjwvdGV4dD4KICAgICAgPHRleHQgY2xhc3M9ImNscy0zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2NC4zOSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+ZTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDc3LjQyIDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj50PC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODUuMDcgMjA3LjM0KSI+PHRzcGFuIHg9IjAiIHk9IjAiPmk8L3RzcGFuPjwvdGV4dD4KICAgICAgPHRleHQgY2xhc3M9ImNscy0zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5MC4yNCAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+bjwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwMy42NCAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+ZzwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDExNy42MSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+IDwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyMi44MSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+RTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEzNi44NSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+czwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE0OC42OCAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+dDwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE1Ni4zMyAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+cjwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE2My45IDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj5hPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTc2LjY3IDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj50PC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTgzLjk0IDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj7DqTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE5Ni45NyAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+ZzwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIxMC45NCAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+aTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIxNi4xMSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+YzwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIyOC44NSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+bzwvdHNwYW4+PC90ZXh0PgogICAgICA8cGF0aCBjbGFzcz0iY2xzLTYiIGQ9Ik00MS43NiwzMi4wNmM1LjgtLjU5LDEwLjg2LDMuNTMsMTEuNDUsOS4zMy41OCw1LjcyLTMuNTQsMTAuNzktOS4zNCwxMS4zOC01LjcyLjU4LTEwLjc5LTMuNTQtMTEuMzctOS4yNi0uNTktNS44LDMuNTMtMTAuODYsOS4yNi0xMS40NFpNNDAuNTIsMTkuODZjMTIuNjUtMS4yOSwyMy44NSw3Ljg0LDI1LjE1LDIwLjQ5LjQ1LDQuMzctLjM0LDguNTYtMi4xLDEyLjI0bC0xNi4xOCwzNC41Mi0yMi43NS0zMC41NWMtMi40Ni0zLjI1LTQuMTYtNy4xOC00LjYtMTEuNTUtMS4yOS0xMi42NSw3LjkxLTIzLjg2LDIwLjQ5LTI1LjE1WiIvPgogICAgPC9nPgogIDwvZz4KPC9zdmc+" alt="Aqui, Mkt!">
+      <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iQ2FtYWRhXzIiIGRhdGEtbmFtZT0iQ2FtYWRhIDIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDI1MC4zNSAyMTguMTUiPjxkZWZzPjxzdHlsZT4uY2xzLTF7Zm9udC1zaXplOjc2Ljc3cHh9LmNscy0xLC5jbHMtMiwuY2xzLTMsLmNscy00LC5jbHMtNXtmaWxsOiNmZmZ9LmNscy0xLC5jbHMtMiwuY2xzLTQsLmNscy01e2ZvbnQtZmFtaWx5Ok5lZ3JpdGFQcm8sJ05lZ3JpdGEgUHJvJ30uY2xzLTJ7Zm9udC1zaXplOjc2Ljc3cHh9LmNscy0ze2ZvbnQtZmFtaWx5OlNGUHJvRGlzcGxheS1SZWd1bGFyLCdTRiBQcm8gRGlzcGxheSc7Zm9udC1zaXplOjI1LjQ4cHh9LmNscy00e2ZvbnQtc2l6ZToxMTQuNzZweH0uY2xzLTZ7ZmlsbDojMDBmZjAxO2ZpbGwtcnVsZTpldmVub2RkfS5jbHMtNXtmb250LXNpemU6MTE0Ljc2cHh9PC9zdHlsZT48L2RlZnM+PGcgaWQ9IkNhbWFkYV8xLTIiIGRhdGEtbmFtZT0iQ2FtYWRhIDEiPjxnPjx0ZXh0IGNsYXNzPSJjbHMtNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTIuMiAxNjAuNikgcm90YXRlKC03LjE5KSI+PHRzcGFuIHg9IjAiIHk9IjAiPk08L3RzcGFuPjwvdGV4dD48dGV4dCBjbGFzcz0iY2xzLTQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDk4LjA3IDE1MC40Mykgcm90YXRlKC43KSI+PHRzcGFuIHg9IjAiIHk9IjAiPms8L3RzcGFuPjwvdGV4dD48dGV4dCBjbGFzcz0iY2xzLTUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE1OC44IDE1MS4zOSkgcm90YXRlKDYuNDgpIj48dHNwYW4geD0iMCIgeT0iMCI+dDwvdHNwYW4+PC90ZXh0Pjx0ZXh0IGNsYXNzPSJjbHMtNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjA1Ljc1IDE1Ny4wMykgcm90YXRlKDEwLjQxKSI+PHRzcGFuIHg9IjAiIHk9IjAiPiE8L3RzcGFuPjwvdGV4dD48dGV4dCBjbGFzcz0iY2xzLTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDY5LjExIDY3LjY5KSByb3RhdGUoLTMuMDUpIj48dHNwYW4geD0iMCIgeT0iMCI+QTwvdHNwYW4+PC90ZXh0Pjx0ZXh0IGNsYXNzPSJjbHMtMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEyLjI4IDY1LjM1KSByb3RhdGUoLjczKSI+PHRzcGFuIHg9IjAiIHk9IjAiPnE8L3RzcGFuPjwvdGV4dD48dGV4dCBjbGFzcz0iY2xzLTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE1MS42MSA2NS43OSkgcm90YXRlKDQuNDUpIj48dHNwYW4geD0iMCIgeT0iMCI+dTwvdHNwYW4+PC90ZXh0Pjx0ZXh0IGNsYXNzPSJjbHMtMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTkxLjI3IDY5LjExKSByb3RhdGUoNy4xMSkiPjx0c3BhbiB4PSIwIiB5PSIwIj5pPC90c3Bhbj48L3RleHQ+PHRleHQgY2xhc3M9ImNscy0yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMDguMTEgNzEuMjEpIHJvdGF0ZSg4LjU5KSI+PHRzcGFuIHg9IjAiIHk9IjAiPiw8L3RzcGFuPjwvdGV4dD48dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDExLjMxIDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj5NYXJrZXRpbmcgRXN0cmF0w6lnaWNvPC90c3Bhbj48L3RleHQ+PHBhdGggY2xhc3M9ImNscy02IiBkPSJNNDEuNzYsMzIuMDZjNS44LS41OSwxMC44NiwzLjUzLDExLjQ1LDkuMzMuNTgsNS43Mi0zLjU0LDEwLjc5LTkuMzQsMTEuMzgtNS43Mi41OC0xMC43OS0zLjU0LTExLjM3LTkuMjYtLjU5LTUuOCwzLjUzLTEwLjg2LDkuMjYtMTEuNDRaTTQwLjUyLDE5Ljg2YzEyLjY1LTEuMjksMjMuODUsNy44NCwyNS4xNSwyMC40OS40NSw0LjM3LS4zNCw4LjU2LTIuMSwxMi4yNGwtMTYuMTgsMzQuNTItMjIuNzUtMzAuNTVjLTIuNDYtMy4yNS00LjE2LTcuMTgtNC42LTExLjU1LTEuMjktMTIuNjUsNy45MS0yMy44NiwyMC40OS0yNS4xNVoiLz48L2c+PC9nPjwvc3ZnPg==" alt="Aqui, Mkt!">
     </a>
-    <span class="nav-badge">Relatório · 06/07/2026</span>
+    <span class="nav-badge">Relatório · 20/07/2026</span>
   </div>
 </nav>
 
 <header class="hero" id="top">
   <div class="hero-logo">
-    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iQ2FtYWRhXzIiIGRhdGEtbmFtZT0iQ2FtYWRhIDIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDI1MC4zNSAyMTguMTUiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZvbnQtc2l6ZTogNzYuNzdweDsKICAgICAgfQoKICAgICAgLmNscy0xLCAuY2xzLTIsIC5jbHMtMywgLmNscy00LCAuY2xzLTUgewogICAgICAgIGZpbGw6ICNmZmY7CiAgICAgIH0KCiAgICAgIC5jbHMtMSwgLmNscy0yLCAuY2xzLTQsIC5jbHMtNSB7CiAgICAgICAgZm9udC1mYW1pbHk6IE5lZ3JpdGFQcm8sICdOZWdyaXRhIFBybyc7CiAgICAgIH0KCiAgICAgIC5jbHMtMiB7CiAgICAgICAgZm9udC1zaXplOiA3Ni43N3B4OwogICAgICB9CgogICAgICAuY2xzLTMgewogICAgICAgIGZvbnQtZmFtaWx5OiBTRlByb0Rpc3BsYXktUmVndWxhciwgJ1NGIFBybyBEaXNwbGF5JzsKICAgICAgICBmb250LXNpemU6IDI1LjQ4cHg7CiAgICAgIH0KCiAgICAgIC5jbHMtNCB7CiAgICAgICAgZm9udC1zaXplOiAxMTQuNzZweDsKICAgICAgfQoKICAgICAgLmNscy02IHsKICAgICAgICBmaWxsOiAjMDBmZjAxOwogICAgICAgIGZpbGwtcnVsZTogZXZlbm9kZDsKICAgICAgfQoKICAgICAgLmNscy01IHsKICAgICAgICBmb250LXNpemU6IDExNC43NnB4OwogICAgICB9CiAgICA8L3N0eWxlPgogIDwvZGVmcz4KICA8ZyBpZD0iQ2FtYWRhXzEtMiIgZGF0YS1uYW1lPSJDYW1hZGEgMSI+CiAgICA8Zz4KICAgICAgPHRleHQgY2xhc3M9ImNscy01IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMi4yIDE2MC42KSByb3RhdGUoLTcuMTkpIj48dHNwYW4geD0iMCIgeT0iMCI+TTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDk4LjA3IDE1MC40Mykgcm90YXRlKC43KSI+PHRzcGFuIHg9IjAiIHk9IjAiPms8L3RzcGFuPjwvdGV4dD4KICAgICAgPHRleHQgY2xhc3M9ImNscy01IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNTguOCAxNTEuMzkpIHJvdGF0ZSg2LjQ4KSI+PHRzcGFuIHg9IjAiIHk9IjAiPnQ8L3RzcGFuPjwvdGV4dD4KICAgICAgPHRleHQgY2xhc3M9ImNscy00IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMDUuNzUgMTU3LjAzKSByb3RhdGUoMTAuNDEpIj48dHNwYW4geD0iMCIgeT0iMCI+ITwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDY5LjExIDY3LjY5KSByb3RhdGUoLTMuMDUpIj48dHNwYW4geD0iMCIgeT0iMCI+QTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDExMi4yOCA2NS4zNSkgcm90YXRlKC43MykiPjx0c3BhbiB4PSIwIiB5PSIwIj5xPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTUxLjYxIDY1Ljc5KSByb3RhdGUoNC40NSkiPjx0c3BhbiB4PSIwIiB5PSIwIj51PC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTkxLjI3IDY5LjExKSByb3RhdGUoNy4xMSkiPjx0c3BhbiB4PSIwIiB5PSIwIj5pPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjA4LjExIDcxLjIxKSByb3RhdGUoOC41OSkiPjx0c3BhbiB4PSIwIiB5PSIwIj4sPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEuMzEgMjA3LjM0KSI+PHRzcGFuIHg9IjAiIHk9IjAiPk08L3RzcGFuPjwvdGV4dD4KICAgICAgPHRleHQgY2xhc3M9ImNscy0zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMi4wOSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+YTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ0Ljg1IDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj5yPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTIuNjcgMjA3LjM0KSI+PHRzcGFuIHg9IjAiIHk9IjAiPms8L3RzcGFuPjwvdGV4dD4KICAgICAgPHRleHQgY2xhc3M9ImNscy0zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2NC4zOSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+ZTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDc3LjQyIDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj50PC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODUuMDcgMjA3LjM0KSI+PHRzcGFuIHg9IjAiIHk9IjAiPmk8L3RzcGFuPjwvdGV4dD4KICAgICAgPHRleHQgY2xhc3M9ImNscy0zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5MC4yNCAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+bjwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwMy42NCAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+ZzwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDExNy42MSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+IDwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyMi44MSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+RTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEzNi44NSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+czwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE0OC42OCAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+dDwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE1Ni4zMyAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+cjwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE2My45IDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj5hPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTc2LjY3IDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj50PC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTgzLjk0IDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj7DqTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE5Ni45NyAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+ZzwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIxMC45NCAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+aTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIxNi4xMSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+YzwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIyOC44NSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+bzwvdHNwYW4+PC90ZXh0PgogICAgICA8cGF0aCBjbGFzcz0iY2xzLTYiIGQ9Ik00MS43NiwzMi4wNmM1LjgtLjU5LDEwLjg2LDMuNTMsMTEuNDUsOS4zMy41OCw1LjcyLTMuNTQsMTAuNzktOS4zNCwxMS4zOC01LjcyLjU4LTEwLjc5LTMuNTQtMTEuMzctOS4yNi0uNTktNS44LDMuNTMtMTAuODYsOS4yNi0xMS40NFpNNDAuNTIsMTkuODZjMTIuNjUtMS4yOSwyMy44NSw3Ljg0LDI1LjE1LDIwLjQ5LjQ1LDQuMzctLjM0LDguNTYtMi4xLDEyLjI0bC0xNi4xOCwzNC41Mi0yMi43NS0zMC41NWMtMi40Ni0zLjI1LTQuMTYtNy4xOC00LjYtMTEuNTUtMS4yOS0xMi42NSw3LjkxLTIzLjg2LDIwLjQ5LTI1LjE1WiIvPgogICAgPC9nPgogIDwvZz4KPC9zdmc+" alt="Aqui, Mkt!">
+    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iQ2FtYWRhXzIiIGRhdGEtbmFtZT0iQ2FtYWRhIDIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDI1MC4zNSAyMTguMTUiPjxkZWZzPjxzdHlsZT4uY2xzLTF7Zm9udC1zaXplOjc2Ljc3cHh9LmNscy0xLC5jbHMtMiwuY2xzLTMsLmNscy00LC5jbHMtNXtmaWxsOiNmZmZ9LmNscy0xLC5jbHMtMiwuY2xzLTQsLmNscy01e2ZvbnQtZmFtaWx5Ok5lZ3JpdGFQcm8sJ05lZ3JpdGEgUHJvJ30uY2xzLTJ7Zm9udC1zaXplOjc2Ljc3cHh9LmNscy0ze2ZvbnQtZmFtaWx5OlNGUHJvRGlzcGxheS1SZWd1bGFyLCdTRiBQcm8gRGlzcGxheSc7Zm9udC1zaXplOjI1LjQ4cHh9LmNscy00e2ZvbnQtc2l6ZToxMTQuNzZweH0uY2xzLTZ7ZmlsbDojMDBmZjAxO2ZpbGwtcnVsZTpldmVub2RkfS5jbHMtNXtmb250LXNpemU6MTE0Ljc2cHh9PC9zdHlsZT48L2RlZnM+PGcgaWQ9IkNhbWFkYV8xLTIiIGRhdGEtbmFtZT0iQ2FtYWRhIDEiPjxnPjx0ZXh0IGNsYXNzPSJjbHMtNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTIuMiAxNjAuNikgcm90YXRlKC03LjE5KSI+PHRzcGFuIHg9IjAiIHk9IjAiPk08L3RzcGFuPjwvdGV4dD48dGV4dCBjbGFzcz0iY2xzLTQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDk4LjA3IDE1MC40Mykgcm90YXRlKC43KSI+PHRzcGFuIHg9IjAiIHk9IjAiPms8L3RzcGFuPjwvdGV4dD48dGV4dCBjbGFzcz0iY2xzLTUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE1OC44IDE1MS4zOSkgcm90YXRlKDYuNDgpIj48dHNwYW4geD0iMCIgeT0iMCI+dDwvdHNwYW4+PC90ZXh0Pjx0ZXh0IGNsYXNzPSJjbHMtNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjA1Ljc1IDE1Ny4wMykgcm90YXRlKDEwLjQxKSI+PHRzcGFuIHg9IjAiIHk9IjAiPiE8L3RzcGFuPjwvdGV4dD48dGV4dCBjbGFzcz0iY2xzLTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDY5LjExIDY3LjY5KSByb3RhdGUoLTMuMDUpIj48dHNwYW4geD0iMCIgeT0iMCI+QTwvdHNwYW4+PC90ZXh0Pjx0ZXh0IGNsYXNzPSJjbHMtMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEyLjI4IDY1LjM1KSByb3RhdGUoLjczKSI+PHRzcGFuIHg9IjAiIHk9IjAiPnE8L3RzcGFuPjwvdGV4dD48dGV4dCBjbGFzcz0iY2xzLTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE1MS42MSA2NS43OSkgcm90YXRlKDQuNDUpIj48dHNwYW4geD0iMCIgeT0iMCI+dTwvdHNwYW4+PC90ZXh0Pjx0ZXh0IGNsYXNzPSJjbHMtMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTkxLjI3IDY5LjExKSByb3RhdGUoNy4xMSkiPjx0c3BhbiB4PSIwIiB5PSIwIj5pPC90c3Bhbj48L3RleHQ+PHRleHQgY2xhc3M9ImNscy0yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMDguMTEgNzEuMjEpIHJvdGF0ZSg4LjU5KSI+PHRzcGFuIHg9IjAiIHk9IjAiPiw8L3RzcGFuPjwvdGV4dD48dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDExLjMxIDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj5NYXJrZXRpbmcgRXN0cmF0w6lnaWNvPC90c3Bhbj48L3RleHQ+PHBhdGggY2xhc3M9ImNscy02IiBkPSJNNDEuNzYsMzIuMDZjNS44LS41OSwxMC44NiwzLjUzLDExLjQ1LDkuMzMuNTgsNS43Mi0zLjU0LDEwLjc5LTkuMzQsMTEuMzgtNS43Mi41OC0xMC43OS0zLjU0LTExLjM3LTkuMjYtLjU5LTUuOCwzLjUzLTEwLjg2LDkuMjYtMTEuNDRaTTQwLjUyLDE5Ljg2YzEyLjY1LTEuMjksMjMuODUsNy44NCwyNS4xNSwyMC40OS40NSw0LjM3LS4zNCw4LjU2LTIuMSwxMi4yNGwtMTYuMTgsMzQuNTItMjIuNzUtMzAuNTVjLTIuNDYtMy4yNS00LjE2LTcuMTgtNC42LTExLjU1LTEuMjktMTIuNjUsNy45MS0yMy44NiwyMC40OS0yNS4xNVoiLz48L2c+PC9nPjwvc3ZnPg==" alt="Aqui, Mkt!">
   </div>
-  <p class="hero-eyebrow">Relatório Semanal · Segunda-feira, 06/07/2026</p>
+  <p class="hero-eyebrow">Relatório Semanal · Segunda-feira, 20/07/2026</p>
   <h1 class="hero-title">Relatório de<br><span>Conteúdo</span></h1>
-  <p class="hero-sub">Estoque de materiais por cliente — semana de <strong style="color:var(--white)">06/07/2026</strong>. Situação de cada cliente identificada e priorizada.</p>
+  <p class="hero-sub">Estoque de materiais por cliente — semana de <strong style="color:var(--white)">20/07/2026</strong>. Situação de cada cliente identificada e priorizada.</p>
   <div class="hero-meta">
-    <span class="meta-pill">📅 06 de Julho de 2026</span>
+    <span class="meta-pill">📅 20 de Julho de 2026</span>
     <span class="meta-pill">👤 Maicon → Caio Ribeiro</span>
-    <span class="meta-pill">📦 10 clientes</span>
+    <span class="meta-pill">📦 11 clientes</span>
   </div>
 </header>
 
@@ -208,32 +211,14 @@
     <p class="section-label">Sistema Kanban</p>
     <h2 class="section-title">Legenda de Prioridade</h2>
     <div class="legend-grid">
-      <div class="legend-card green">
-        <div class="legend-dot"></div>
-        <div class="legend-info">
-          <div class="legend-label">🟢 Verde — OK</div>
-          <div class="legend-desc">Mais de 2 semanas de material produzido. Baixa prioridade de ação.</div>
-        </div>
-      </div>
-      <div class="legend-card yellow">
-        <div class="legend-dot"></div>
-        <div class="legend-info">
-          <div class="legend-label">🟡 Amarelo — Atenção</div>
-          <div class="legend-desc">Aproximadamente 1 semana de material. Agendar gravação em breve.</div>
-        </div>
-      </div>
-      <div class="legend-card red">
-        <div class="legend-dot"></div>
-        <div class="legend-info">
-          <div class="legend-label">🔴 Vermelho — Urgente</div>
-          <div class="legend-desc">Menos de 1 semana ou sem material. Gravação urgente necessária.</div>
-        </div>
-      </div>
+      <div class="legend-card green"><div class="legend-dot"></div><div><div class="legend-label">🟢 Verde — OK</div><div class="legend-desc">Mais de 2 semanas de material. Baixa prioridade de ação.</div></div></div>
+      <div class="legend-card yellow"><div class="legend-dot"></div><div><div class="legend-label">🟡 Amarelo — Atenção</div><div class="legend-desc">Aproximadamente 1 semana de material. Agendar gravação em breve.</div></div></div>
+      <div class="legend-card red"><div class="legend-dot"></div><div><div class="legend-label">🔴 Vermelho — Urgente</div><div class="legend-desc">Menos de 1 semana ou sem material. Gravação urgente necessária.</div></div></div>
     </div>
     <div class="summary-row">
-      <span class="summary-pill green"><span class="dot"></span> 2 clientes em dia</span>
+      <span class="summary-pill green"><span class="dot"></span> 8 clientes em dia</span>
       <span class="summary-pill yellow"><span class="dot"></span> 3 clientes em atenção</span>
-      <span class="summary-pill red"><span class="dot"></span> 5 clientes urgentes</span>
+      <span class="summary-pill red"><span class="dot"></span> 0 urgentes</span>
     </div>
   </div>
 </section>
@@ -251,37 +236,64 @@
         <div class="kanban-col-header">
           <div class="col-dot green"></div>
           <span class="col-title green">Verde — OK</span>
-          <span class="col-count green">2</span>
+          <span class="col-count green">8</span>
         </div>
 
-        <div class="client-card green" data-days="24" data-max="28">
-          <div class="card-top">
-            <div class="client-name">Atual Peças</div>
-            <span class="status-badge green">OK</span>
-          </div>
-          <div class="card-deadline">
-            <span>📅</span> Material até <span class="deadline-date">&nbsp;31/07/2026</span>
-          </div>
-          <div class="days-bar-wrap">
-            <div class="days-bar-label"><span>Hoje</span><span>24 dias restantes</span></div>
-            <div class="days-bar-track"><div class="days-bar-fill"></div></div>
-          </div>
-          <div class="card-note green">✅ Estoque confortável. Nenhuma ação necessária esta semana.</div>
+        <div class="client-card green" data-days="25" data-max="28">
+          <div class="card-top"><div class="client-name">Viva Distribuidora</div><span class="status-badge green">OK</span></div>
+          <div class="card-deadline">📅 Material até <span class="deadline-date">&nbsp;14/08/2026</span></div>
+          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>25 dias restantes</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
+          <div class="card-note green">✅ Estoque confortável. Nenhuma ação necessária.</div>
+          <div class="whatsapp-tag">📲 Recebimento via WhatsApp</div>
         </div>
 
-        <div class="client-card green" data-days="8" data-max="28">
-          <div class="card-top">
-            <div class="client-name">Sua Conquista</div>
-            <span class="status-badge green">OK</span>
-          </div>
-          <div class="card-deadline">
-            <span>📅</span> Material até <span class="deadline-date">&nbsp;15/07/2026</span>
-          </div>
-          <div class="days-bar-wrap">
-            <div class="days-bar-label"><span>Hoje</span><span>8 dias restantes</span></div>
-            <div class="days-bar-track"><div class="days-bar-fill"></div></div>
-          </div>
-          <div class="card-note green">✅ Estoque ok. Cliente de alta atenção — monitorar de perto.</div>
+        <div class="client-card green" data-days="22" data-max="28">
+          <div class="card-top"><div class="client-name">Beira Rio Tintas</div><span class="status-badge green">OK</span></div>
+          <div class="card-deadline">📅 Material até <span class="deadline-date">&nbsp;11/08/2026</span></div>
+          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>22 dias restantes</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
+          <div class="card-note green">✅ Estoque confortável. Nenhuma ação necessária.</div>
+        </div>
+
+        <div class="client-card green" data-days="18" data-max="28">
+          <div class="card-top"><div class="client-name">Norte Auto Peças</div><span class="status-badge green">OK</span></div>
+          <div class="card-deadline">📅 Material até <span class="deadline-date">&nbsp;07/08/2026</span></div>
+          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>18 dias restantes</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
+          <div class="card-note green">✅ Estoque confortável. Monitorar ao longo da semana.</div>
+        </div>
+
+        <div class="client-card green" data-days="15" data-max="28">
+          <div class="card-top"><div class="client-name">Panda Hortfrut</div><span class="status-badge green">OK</span></div>
+          <div class="card-deadline">📅 Material até <span class="deadline-date">&nbsp;04/08/2026</span></div>
+          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>15 dias restantes</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
+          <div class="card-note green">✅ Estoque confortável. Nenhuma ação necessária.</div>
+        </div>
+
+        <div class="client-card green" data-days="15" data-max="28">
+          <div class="card-top"><div class="client-name">Domio</div><span class="status-badge green">OK</span></div>
+          <div class="card-deadline">📅 Material até <span class="deadline-date">&nbsp;04/08/2026</span></div>
+          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>15 dias restantes</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
+          <div class="card-note green">✅ Estoque confortável. Nenhuma ação necessária.</div>
+        </div>
+
+        <div class="client-card green" data-days="15" data-max="28">
+          <div class="card-top"><div class="client-name">Innovare | Construção Seca</div><span class="status-badge green">OK</span></div>
+          <div class="card-deadline">📅 Material até <span class="deadline-date">&nbsp;04/08/2026</span></div>
+          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>15 dias restantes</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
+          <div class="card-note green">✅ Estoque ok. Ver alinhamento editorial abaixo.</div>
+        </div>
+
+        <div class="client-card green" data-days="15" data-max="28">
+          <div class="card-top"><div class="client-name">Mercado Moreira</div><span class="status-badge green">OK</span></div>
+          <div class="card-deadline">📅 Material até <span class="deadline-date">&nbsp;04/08/2026</span></div>
+          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>15 dias restantes</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
+          <div class="card-note green">✅ Estoque confortável. Nenhuma ação necessária.</div>
+        </div>
+
+        <div class="client-card green" data-days="18" data-max="28">
+          <div class="card-top"><div class="client-name">HR Grife Modas</div><span class="status-badge green">OK</span></div>
+          <div class="card-deadline">📅 Material até <span class="deadline-date">&nbsp;07/08/2026</span></div>
+          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>18 dias restantes</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
+          <div class="card-note green">✅ Estoque confortável. Nenhuma ação necessária.</div>
         </div>
       </div>
 
@@ -293,110 +305,110 @@
           <span class="col-count yellow">3</span>
         </div>
 
-        <div class="client-card yellow" data-days="3" data-max="14">
-          <div class="card-top">
-            <div class="client-name">Beira Rio Tintas</div>
-            <span class="status-badge yellow">Atenção</span>
-          </div>
-          <div class="card-deadline">
-            <span>📅</span> Material até <span class="deadline-date">&nbsp;10/07/2026</span>
-          </div>
-          <div class="days-bar-wrap">
-            <div class="days-bar-label"><span>Hoje</span><span>3 dias restantes</span></div>
-            <div class="days-bar-track"><div class="days-bar-fill"></div></div>
-          </div>
-          <div class="card-note yellow">⚠️ Menos de 1 semana. Agendar gravação com urgência.</div>
+        <div class="client-card yellow" data-days="8" data-max="14">
+          <div class="card-top"><div class="client-name">Carnallis</div><span class="status-badge yellow">Atenção</span></div>
+          <div class="card-deadline">📅 Material até <span class="deadline-date">&nbsp;28/07/2026</span></div>
+          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>8 dias restantes</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
+          <div class="card-note yellow">⚠️ Menos de 2 semanas. Agendar gravação ainda esta semana.</div>
         </div>
 
-        <div class="client-card yellow" data-days="3" data-max="14">
-          <div class="card-top">
-            <div class="client-name">Norte Auto Peças</div>
-            <span class="status-badge yellow">Atenção</span>
-          </div>
-          <div class="card-deadline">
-            <span>📅</span> Material até <span class="deadline-date">&nbsp;10/07/2026</span>
-          </div>
-          <div class="days-bar-wrap">
-            <div class="days-bar-label"><span>Hoje</span><span>3 dias restantes</span></div>
-            <div class="days-bar-track"><div class="days-bar-fill"></div></div>
-          </div>
-          <div class="card-note yellow">⚠️ Menos de 1 semana. Agendar gravação com urgência.</div>
+        <div class="client-card yellow" data-days="11" data-max="14">
+          <div class="card-top"><div class="client-name">Sua Conquista</div><span class="status-badge yellow">Atenção</span></div>
+          <div class="card-deadline">📅 Material até <span class="deadline-date">&nbsp;31/07/2026</span></div>
+          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>11 dias restantes</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
+          <div class="card-note yellow">⚠️ 7 materiais prontos. Aguardando aprovação da cliente para definir datas exatas. Ver alinhamento editorial abaixo.</div>
+          <div class="pending-tag">🕐 Aguardando aprovação da cliente</div>
         </div>
 
-        <div class="client-card yellow" data-days="3" data-max="14">
-          <div class="card-top">
-            <div class="client-name">Aqui MKT</div>
-            <span class="status-badge yellow">Atenção</span>
-          </div>
-          <div class="card-deadline">
-            <span>📅</span> Material até <span class="deadline-date">&nbsp;10/07/2026</span>
-          </div>
-          <div class="days-bar-wrap">
-            <div class="days-bar-label"><span>Hoje</span><span>3 dias restantes</span></div>
-            <div class="days-bar-track"><div class="days-bar-fill"></div></div>
-          </div>
-          <div class="card-note yellow">⚠️ Menos de 1 semana. Agendar gravação com urgência.</div>
+        <div class="client-card yellow" data-days="11" data-max="14">
+          <div class="card-top"><div class="client-name">Atual Peças</div><span class="status-badge yellow">Atenção</span></div>
+          <div class="card-deadline">📅 Material até <span class="deadline-date">&nbsp;31/07/2026</span></div>
+          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>11 dias restantes</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
+          <div class="card-note yellow">⚠️ Menos de 2 semanas. Planejar próxima gravação.</div>
         </div>
       </div>
 
-      <!-- VERMELHO -->
+      <!-- VERMELHO (vazio) -->
       <div class="kanban-col">
         <div class="kanban-col-header">
           <div class="col-dot red"></div>
           <span class="col-title red">Vermelho — Urgente</span>
-          <span class="col-count red">5</span>
+          <span class="col-count red">0</span>
         </div>
-
-        <div class="client-card red" data-days="0" data-max="7">
-          <div class="card-top">
-            <div class="client-name">Viva Distribuidora</div>
-            <span class="status-badge red">Cobrar</span>
-          </div>
-          <div class="card-deadline"><span>📲</span><span style="color:var(--muted)">Aguardando envio via WhatsApp</span></div>
-          <div class="card-note red">📲 Cliente envia vídeos via WhatsApp. Material esgotado — cobrar novo envio.</div>
-          <div class="whatsapp-tag">📲 Recebimento via WhatsApp — sem Syncora</div>
+        <div style="padding:24px 20px;background:var(--surface);border:1px dashed rgba(255,60,60,0.2);border-radius:var(--radius);text-align:center;font-size:13px;color:var(--muted)">
+          🎉 Nenhum cliente em situação crítica esta semana.
         </div>
+      </div>
 
-        
+    </div>
+  </div>
+</section>
 
-        <div class="client-card red" data-days="0" data-max="7">
-          <div class="card-top">
-            <div class="client-name">Carnallis</div>
-            <span class="status-badge red">Sem material</span>
+<div class="divider"></div>
+
+<!-- ALINHAMENTOS EDITORIAIS -->
+<section class="align-section" id="alinhamentos">
+  <div class="container">
+    <p class="section-label">Alinhamentos Editoriais</p>
+    <h2 class="section-title">Diretrizes de Publicação</h2>
+    <div class="align-grid">
+
+      <!-- Innovare -->
+      <div class="align-card">
+        <div class="align-header">
+          <div class="align-avatar">🏗️</div>
+          <div>
+            <div class="align-client-name">Innovare | Construção Seca</div>
+            <div class="align-subtitle">Intercalação de figuras</div>
           </div>
-          <div class="card-deadline"><span>📋</span><span style="color:var(--muted)">Nenhum material em estoque</span></div>
-          <div class="card-note red">🚨 Sem material. Aguardando agendamento das gravações.</div>
-          <div class="pending-tag">🕐 Aguardando agendamento de gravação</div>
         </div>
-
-        <div class="client-card red" data-days="0" data-max="7">
-          <div class="card-top">
-            <div class="client-name">Domio</div>
-            <span class="status-badge red">Aguardando</span>
-          </div>
-          <div class="card-deadline"><span>📋</span><span style="color:var(--muted)">Sem material em estoque</span></div>
-          <div class="card-note red">⏳ Aguardando gravação. Cliente enviou materiais no grupo — verificando o que é possível produzir.</div>
-          <div class="pending-tag">🕐 Materiais enviados no grupo — em análise</div>
+        <div class="align-rules">
+          <div class="align-rule"><div class="rule-dot"></div>Os vídeos devem alternar obrigatoriamente entre o <strong style="color:var(--white)">vídeo do homem</strong> e o <strong style="color:var(--white)">vídeo da mulher</strong>.</div>
+          <div class="align-rule"><div class="rule-dot"></div>Nunca publicar dois vídeos seguidos do mesmo perfil — sempre alternar.</div>
         </div>
-
-        <div class="client-card red" data-days="0" data-max="7">
-          <div class="card-top">
-            <div class="client-name">Innovare | Construção Seca</div>
-            <span class="status-badge red">Sem material</span>
+        <div class="schedule-intercal" style="margin-top:16px">
+          <div class="day-block highlight">
+            <div class="day-label">Post 1</div>
+            <div class="day-content">👨 Homem</div>
           </div>
-          <div class="card-deadline"><span>📋</span><span style="color:var(--muted)">Nenhum material produzido</span></div>
-          <div class="card-note red">🚨 Sem material. Aguardando agendamento das gravações.</div>
-          <div class="pending-tag">🕐 Aguardando agendamento de gravação</div>
+          <div class="day-block">
+            <div class="day-label">Post 2</div>
+            <div class="day-content">👩 Mulher</div>
+          </div>
+          <div class="day-block highlight">
+            <div class="day-label">Post 3</div>
+            <div class="day-content">👨 Homem</div>
+          </div>
         </div>
+      </div>
 
-        <div class="client-card red" data-days="0" data-max="7">
-          <div class="card-top">
-            <div class="client-name">Mercado Moreira</div>
-            <span class="status-badge red">Sem material</span>
+      <!-- Sua Conquista -->
+      <div class="align-card">
+        <div class="align-header">
+          <div class="align-avatar">🏆</div>
+          <div>
+            <div class="align-client-name">Sua Conquista</div>
+            <div class="align-subtitle">Distribuição semanal — 3x/semana</div>
           </div>
-          <div class="card-deadline"><span>📋</span><span style="color:var(--muted)">Nenhum material em estoque</span></div>
-          <div class="card-note red">🚨 Sem material. Acionar roteirização e gravação.</div>
-          <div class="syncora-alert">⚠️ Sem sinalização de demanda no Syncora</div>
+        </div>
+        <div class="align-rules">
+          <div class="align-rule"><div class="rule-dot"></div><strong style="color:var(--white)">Segunda e Sexta:</strong> vídeo da <strong style="color:var(--green)">Mariana</strong>.</div>
+          <div class="align-rule"><div class="rule-dot"></div><strong style="color:var(--white)">Quarta-feira:</strong> vídeo das <strong style="color:#ffc800)">Corretoras</strong> — nunca da Mariana.</div>
+          <div class="align-rule"><div class="rule-dot"></div>Manter essa sequência fixamente para preservar a consistência do perfil.</div>
+        </div>
+        <div class="schedule-intercal" style="margin-top:16px">
+          <div class="day-block highlight">
+            <div class="day-label">Segunda</div>
+            <div class="day-content" style="color:var(--green)">Mariana</div>
+          </div>
+          <div class="day-block" style="border-color:rgba(255,200,0,0.35);background:rgba(255,200,0,0.06)">
+            <div class="day-label" style="color:#ffc800">Quarta</div>
+            <div class="day-content" style="color:#ffc800">Corretoras</div>
+          </div>
+          <div class="day-block highlight">
+            <div class="day-label">Sexta</div>
+            <div class="day-content" style="color:var(--green)">Mariana</div>
+          </div>
         </div>
       </div>
 
@@ -419,24 +431,15 @@
       </div>
     </div>
     <div class="bjd-grid">
-
       <div class="bjd-card bjd-red">
-        <div class="bjd-card-top">
-          <div class="bjd-client-name">Constrularte</div>
-          <span class="bjd-badge red">⛔ Sem material</span>
-        </div>
-        <div class="bjd-note">Sem material para o Bom Jardim Divulga. Gravação já agendada — aguardando data confirmada.</div>
-        <div class="recording-tag" style="margin-top:10px">🎬 Gravação agendada — data a confirmar</div>
+        <div class="bjd-card-top"><div class="bjd-client-name">Constrularte</div><span class="bjd-badge red">⛔ Sem material</span></div>
+        <div class="bjd-note">Sem material para o Bom Jardim Divulga. Gravação agendada — aguardando data confirmada.</div>
+        <div class="recording-tag">🎬 Gravação agendada — data a confirmar</div>
       </div>
-
       <div class="bjd-card bjd-green">
-        <div class="bjd-card-top">
-          <div class="bjd-client-name">Panda Hortfrut</div>
-          <span class="bjd-badge green">🟢 Ativo</span>
-        </div>
-        <div class="bjd-note">Possui vídeos que serão publicados em formato de Colab no Bom Jardim Divulga. Estoque em andamento.</div>
+        <div class="bjd-card-top"><div class="bjd-client-name">Panda Hortfrut</div><span class="bjd-badge green">🟢 Ativo</span></div>
+        <div class="bjd-note">Vídeos em formato Colab sendo publicados no Bom Jardim Divulga. Estoque em andamento.</div>
       </div>
-
     </div>
   </div>
 </section>
@@ -444,8 +447,8 @@
 <div class="divider"></div>
 
 <footer class="footer">
-  <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iQ2FtYWRhXzIiIGRhdGEtbmFtZT0iQ2FtYWRhIDIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDI1MC4zNSAyMTguMTUiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZvbnQtc2l6ZTogNzYuNzdweDsKICAgICAgfQoKICAgICAgLmNscy0xLCAuY2xzLTIsIC5jbHMtMywgLmNscy00LCAuY2xzLTUgewogICAgICAgIGZpbGw6ICNmZmY7CiAgICAgIH0KCiAgICAgIC5jbHMtMSwgLmNscy0yLCAuY2xzLTQsIC5jbHMtNSB7CiAgICAgICAgZm9udC1mYW1pbHk6IE5lZ3JpdGFQcm8sICdOZWdyaXRhIFBybyc7CiAgICAgIH0KCiAgICAgIC5jbHMtMiB7CiAgICAgICAgZm9udC1zaXplOiA3Ni43N3B4OwogICAgICB9CgogICAgICAuY2xzLTMgewogICAgICAgIGZvbnQtZmFtaWx5OiBTRlByb0Rpc3BsYXktUmVndWxhciwgJ1NGIFBybyBEaXNwbGF5JzsKICAgICAgICBmb250LXNpemU6IDI1LjQ4cHg7CiAgICAgIH0KCiAgICAgIC5jbHMtNCB7CiAgICAgICAgZm9udC1zaXplOiAxMTQuNzZweDsKICAgICAgfQoKICAgICAgLmNscy02IHsKICAgICAgICBmaWxsOiAjMDBmZjAxOwogICAgICAgIGZpbGwtcnVsZTogZXZlbm9kZDsKICAgICAgfQoKICAgICAgLmNscy01IHsKICAgICAgICBmb250LXNpemU6IDExNC43NnB4OwogICAgICB9CiAgICA8L3N0eWxlPgogIDwvZGVmcz4KICA8ZyBpZD0iQ2FtYWRhXzEtMiIgZGF0YS1uYW1lPSJDYW1hZGEgMSI+CiAgICA8Zz4KICAgICAgPHRleHQgY2xhc3M9ImNscy01IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMi4yIDE2MC42KSByb3RhdGUoLTcuMTkpIj48dHNwYW4geD0iMCIgeT0iMCI+TTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDk4LjA3IDE1MC40Mykgcm90YXRlKC43KSI+PHRzcGFuIHg9IjAiIHk9IjAiPms8L3RzcGFuPjwvdGV4dD4KICAgICAgPHRleHQgY2xhc3M9ImNscy01IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNTguOCAxNTEuMzkpIHJvdGF0ZSg2LjQ4KSI+PHRzcGFuIHg9IjAiIHk9IjAiPnQ8L3RzcGFuPjwvdGV4dD4KICAgICAgPHRleHQgY2xhc3M9ImNscy00IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMDUuNzUgMTU3LjAzKSByb3RhdGUoMTAuNDEpIj48dHNwYW4geD0iMCIgeT0iMCI+ITwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDY5LjExIDY3LjY5KSByb3RhdGUoLTMuMDUpIj48dHNwYW4geD0iMCIgeT0iMCI+QTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDExMi4yOCA2NS4zNSkgcm90YXRlKC43MykiPjx0c3BhbiB4PSIwIiB5PSIwIj5xPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTUxLjYxIDY1Ljc5KSByb3RhdGUoNC40NSkiPjx0c3BhbiB4PSIwIiB5PSIwIj51PC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTkxLjI3IDY5LjExKSByb3RhdGUoNy4xMSkiPjx0c3BhbiB4PSIwIiB5PSIwIj5pPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjA4LjExIDcxLjIxKSByb3RhdGUoOC41OSkiPjx0c3BhbiB4PSIwIiB5PSIwIj4sPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEuMzEgMjA3LjM0KSI+PHRzcGFuIHg9IjAiIHk9IjAiPk08L3RzcGFuPjwvdGV4dD4KICAgICAgPHRleHQgY2xhcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMyLjA5IDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj5hPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDQuODUgMjA3LjM0KSI+PHRzcGFuIHg9IjAiIHk9IjAiPnI8L3RzcGFuPjwvdGV4dD4KICAgICAgPHRleHQgY2xhc3M9ImNscy0zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1Mi42NyAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+azwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDY0LjM5IDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj5lPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNzcuNDIgMjA3LjM0KSI+PHRzcGFuIHg9IjAiIHk9IjAiPnQ8L3RzcGFuPjwvdGV4dD4KICAgICAgPHRleHQgY2xhc3M9ImNscy0zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4NS4wNyAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+aTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDkwLjI0IDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj5uPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAzLjY0IDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj5nPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTE3LjYxIDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj4gPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTIyLjgxIDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj5FPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTM2Ljg1IDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj5zPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTQ4LjY4IDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj50PC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTU2LjMzIDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj5yPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTYzLjkgMjA3LjM0KSI+PHRzcGFuIHg9IjAiIHk9IjAiPmE8L3RzcGFuPjwvdGV4dD4KICAgICAgPHRleHQgY2xhc3M9ImNscy0zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNzYuNjcgMjA3LjM0KSI+PHRzcGFuIHg9IjAiIHk9IjAiPnQ8L3RzcGFuPjwvdGV4dD4KICAgICAgPHRleHQgY2xhc3M9ImNscy0zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxODMuOTQgMjA3LjM0KSI+PHRzcGFuIHg9IjAiIHk9IjAiPsOpPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTk2Ljk3IDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj5nPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjEwLjk0IDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj5pPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjE2LjExIDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj5jPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjI4Ljg1IDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj5vPC90c3Bhbj48L3RleHQ+CiAgICAgIDxwYXRoIGNsYXNzPSJjbHMtNiIgZD0iTTQxLjc2LDMyLjA2YzUuOC0uNTksMTAuODYsMy41MywxMS40NSw5LjMzLjU4LDUuNzItMy41NCwxMC43OS05LjM0LDExLjM4LTUuNzIuNTgtMTAuNzktMy41NC0xMS4zNy05LjI2LS41OS01LjgsMy41My0xMC44Niw5LjI2LTExLjQ0Wk00MC41MiwxOS44NmMxMi42NS0xLjI5LDIzLjg1LDcuODQsMjUuMTUsMjAuNDkuNDUsNC4zNy0uMzQsOC41Ni0yLjEsMTIuMjRsLTE2LjE4LDM0LjUyLTIyLjc1LTMwLjU1Yy0yLjQ2LTMuMjUtNC4xNi03LjE4LTQuNi0xMS41NS0xLjI5LTEyLjY1LDcuOTEtMjMuODYsMjAuNDktMjUuMTVaIi8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4=" alt="Aqui, Mkt!">
-  <p class="footer-sub">Marketing Estratégico · Relatório de Relatório · 06/07/2026<br>Preparado por Maicon para Caio Ribeiro</p>
+  <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iQ2FtYWRhXzIiIGRhdGEtbmFtZT0iQ2FtYWRhIDIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDI1MC4zNSAyMTguMTUiPjxkZWZzPjxzdHlsZT4uY2xzLTF7Zm9udC1zaXplOjc2Ljc3cHh9LmNscy0xLC5jbHMtMiwuY2xzLTMsLmNscy00LC5jbHMtNXtmaWxsOiNmZmZ9LmNscy0xLC5jbHMtMiwuY2xzLTQsLmNscy01e2ZvbnQtZmFtaWx5Ok5lZ3JpdGFQcm8sJ05lZ3JpdGEgUHJvJ30uY2xzLTJ7Zm9udC1zaXplOjc2Ljc3cHh9LmNscy0ze2ZvbnQtZmFtaWx5OlNGUHJvRGlzcGxheS1SZWd1bGFyLCdTRiBQcm8gRGlzcGxheSc7Zm9udC1zaXplOjI1LjQ4cHh9LmNscy00e2ZvbnQtc2l6ZToxMTQuNzZweH0uY2xzLTZ7ZmlsbDojMDBmZjAxO2ZpbGwtcnVsZTpldmVub2RkfS5jbHMtNXtmb250LXNpemU6MTE0Ljc2cHh9PC9zdHlsZT48L2RlZnM+PGcgaWQ9IkNhbWFkYV8xLTIiIGRhdGEtbmFtZT0iQ2FtYWRhIDEiPjxnPjx0ZXh0IGNsYXNzPSJjbHMtNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTIuMiAxNjAuNikgcm90YXRlKC03LjE5KSI+PHRzcGFuIHg9IjAiIHk9IjAiPk08L3RzcGFuPjwvdGV4dD48dGV4dCBjbGFzcz0iY2xzLTQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDk4LjA3IDE1MC40Mykgcm90YXRlKC43KSI+PHRzcGFuIHg9IjAiIHk9IjAiPms8L3RzcGFuPjwvdGV4dD48dGV4dCBjbGFzcz0iY2xzLTUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE1OC44IDE1MS4zOSkgcm90YXRlKDYuNDgpIj48dHNwYW4geD0iMCIgeT0iMCI+dDwvdHNwYW4+PC90ZXh0Pjx0ZXh0IGNsYXNzPSJjbHMtNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjA1Ljc1IDE1Ny4wMykgcm90YXRlKDEwLjQxKSI+PHRzcGFuIHg9IjAiIHk9IjAiPiE8L3RzcGFuPjwvdGV4dD48dGV4dCBjbGFzcz0iY2xzLTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDY5LjExIDY3LjY5KSByb3RhdGUoLTMuMDUpIj48dHNwYW4geD0iMCIgeT0iMCI+QTwvdHNwYW4+PC90ZXh0Pjx0ZXh0IGNsYXNzPSJjbHMtMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEyLjI4IDY1LjM1KSByb3RhdGUoLjczKSI+PHRzcGFuIHg9IjAiIHk9IjAiPnE8L3RzcGFuPjwvdGV4dD48dGV4dCBjbGFzcz0iY2xzLTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE1MS42MSA2NS43OSkgcm90YXRlKDQuNDUpIj48dHNwYW4geD0iMCIgeT0iMCI+dTwvdHNwYW4+PC90ZXh0Pjx0ZXh0IGNsYXNzPSJjbHMtMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTkxLjI3IDY5LjExKSByb3RhdGUoNy4xMSkiPjx0c3BhbiB4PSIwIiB5PSIwIj5pPC90c3Bhbj48L3RleHQ+PHRleHQgY2xhc3M9ImNscy0yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMDguMTEgNzEuMjEpIHJvdGF0ZSg4LjU5KSI+PHRzcGFuIHg9IjAiIHk9IjAiPiw8L3RzcGFuPjwvdGV4dD48dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDExLjMxIDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj5NYXJrZXRpbmcgRXN0cmF0w6lnaWNvPC90c3Bhbj48L3RleHQ+PHBhdGggY2xhc3M9ImNscy02IiBkPSJNNDEuNzYsMzIuMDZjNS44LS41OSwxMC44NiwzLjUzLDExLjQ1LDkuMzMuNTgsNS43Mi0zLjU0LDEwLjc5LTkuMzQsMTEuMzgtNS43Mi41OC0xMC43OS0zLjU0LTExLjM3LTkuMjYtLjU5LTUuOCwzLjUzLTEwLjg2LDkuMjYtMTEuNDRaTTQwLjUyLDE5Ljg2YzEyLjY1LTEuMjksMjMuODUsNy44NCwyNS4xNSwyMC40OS40NSw0LjM3LS4zNCw4LjU2LTIuMSwxMi4yNGwtMTYuMTgsMzQuNTItMjIuNzUtMzAuNTVjLTIuNDYtMy4yNS00LjE2LTcuMTgtNC42LTExLjU1LTEuMjktMTIuNjUsNy45MS0yMy44NiwyMC40OS0yNS4xNVoiLz48L2c+PC9nPjwvc3ZnPg==" alt="Aqui, Mkt!">
+  <p class="footer-sub">Marketing Estratégico · Relatório Semanal · 20/07/2026<br>Preparado por Maicon para Caio Ribeiro</p>
 </footer>
 
 <script>
@@ -472,7 +475,7 @@
     });
   }, { threshold: 0.1 });
 
-  document.querySelectorAll('.client-card, .bjd-card').forEach((el, i) => {
+  document.querySelectorAll('.client-card, .bjd-card, .align-card').forEach((el, i) => {
     el.dataset.delay = (i % 5) * 70;
     observer.observe(el);
   });
