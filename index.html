@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Relatório Semanal — 10/08/2026 — Aqui, Mkt!</title>
+<title>Relatório Semanal — 17/08/2026 — Aqui, Mkt!</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root{--green:#00ff01;--green-dim:rgba(0,255,1,.12);--green-glow:rgba(0,255,1,.25);--black:#080808;--surface:#111111;--surface-2:#181818;--border:rgba(255,255,255,.07);--border-green:rgba(0,255,1,.3);--white:#fff;--muted:rgba(255,255,255,.45);--text:rgba(255,255,255,.88);--radius:16px;--k-green:#00ff01;--k-green-bg:rgba(0,255,1,.08);--k-green-border:rgba(0,255,1,.35);--k-yellow:#ffc800;--k-yellow-bg:rgba(255,200,0,.08);--k-yellow-border:rgba(255,200,0,.35);--k-red:#ff3c3c;--k-red-bg:rgba(255,60,60,.08);--k-red-border:rgba(255,60,60,.35)}
+  :root{--green:#00ff01;--green-dim:rgba(0,255,1,.12);--black:#080808;--surface:#111111;--surface-2:#181818;--border:rgba(255,255,255,.07);--border-green:rgba(0,255,1,.3);--white:#fff;--muted:rgba(255,255,255,.45);--text:rgba(255,255,255,.88);--radius:16px;--k-green:#00ff01;--k-green-bg:rgba(0,255,1,.08);--k-green-border:rgba(0,255,1,.35);--k-yellow:#ffc800;--k-yellow-bg:rgba(255,200,0,.08);--k-yellow-border:rgba(255,200,0,.35);--k-red:#ff3c3c;--k-red-bg:rgba(255,60,60,.08);--k-red-border:rgba(255,60,60,.35)}
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
   body{background:var(--black);color:var(--text);font-family:'Inter',sans-serif;font-size:15px;line-height:1.7;min-height:100vh;overflow-x:hidden}
@@ -84,10 +84,13 @@
   .days-bar-track{height:4px;background:rgba(255,255,255,.08);border-radius:2px;overflow:hidden}
   .days-bar-fill{height:100%;border-radius:2px;transition:width 1s cubic-bezier(.4,0,.2,1) .3s;width:0%}
   .client-card.green .days-bar-fill{background:var(--k-green)}.client-card.yellow .days-bar-fill{background:var(--k-yellow)}.client-card.red .days-bar-fill{background:var(--k-red)}
-  .recording-tag{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:8px;background:rgba(255,200,0,.1);border:1px solid rgba(255,200,0,.4);font-size:11px;font-weight:600;color:#ffc800;margin-top:8px;line-height:1.4}
+  /* schedule pills */
+  .schedule-pills{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+  .sch-pill{padding:4px 10px;border-radius:100px;font-size:10px;font-weight:700;border:1px solid var(--k-yellow-border);background:var(--k-yellow-bg);color:var(--k-yellow)}
+  /* tags */
+  .alert-tag{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:8px;background:rgba(255,60,60,.1);border:1px solid rgba(255,60,60,.35);font-size:11px;font-weight:600;color:#ff6b6b;margin-top:8px;line-height:1.4}
   .pending-tag{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:8px;background:rgba(100,160,255,.1);border:1px solid rgba(100,160,255,.35);font-size:11px;font-weight:600;color:#64a0ff;margin-top:6px;line-height:1.4}
-  .alert-tag{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:8px;background:rgba(255,60,60,.1);border:1px solid rgba(255,60,60,.35);font-size:11px;font-weight:600;color:#ff6b6b;margin-top:6px;line-height:1.4}
-  .today-tag{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:8px;background:rgba(0,255,1,.1);border:1px solid rgba(0,255,1,.35);font-size:11px;font-weight:600;color:var(--green);margin-top:6px;line-height:1.4}
+  /* alinhamentos */
   .align-section{padding:64px 0;border-top:1px solid var(--border)}
   .align-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:16px}
   @media(max-width:560px){.align-grid{grid-template-columns:1fr}}
@@ -120,7 +123,7 @@
     <a href="#top" class="nav-brand">
       <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iQ2FtYWRhXzIiIGRhdGEtbmFtZT0iQ2FtYWRhIDIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDI1MC4zNSAyMTguMTUiPjxkZWZzPjxzdHlsZT4uY2xzLTF7Zm9udC1zaXplOjc2Ljc3cHh9LmNscy0xLC5jbHMtMiwuY2xzLTMsLmNscy00LC5jbHMtNXtmaWxsOiNmZmZ9LmNscy0xLC5jbHMtMiwuY2xzLTQsLmNscy01e2ZvbnQtZmFtaWx5Ok5lZ3JpdGFQcm8sJ05lZ3JpdGEgUHJvJ30uY2xzLTJ7Zm9udC1zaXplOjc2Ljc3cHh9LmNscy0ze2ZvbnQtZmFtaWx5OlNGUHJvRGlzcGxheS1SZWd1bGFyLCdTRiBQcm8gRGlzcGxheSc7Zm9udC1zaXplOjI1LjQ4cHh9LmNscy00e2ZvbnQtc2l6ZToxMTQuNzZweH0uY2xzLTZ7ZmlsbDojMDBmZjAxO2ZpbGwtcnVsZTpldmVub2RkfS5jbHMtNXtmb250LXNpemU6MTE0Ljc2cHh9PC9zdHlsZT48L2RlZnM+PGcgaWQ9IkNhbWFkYV8xLTIiIGRhdGEtbmFtZT0iQ2FtYWRhIDEiPjxnPjx0ZXh0IGNsYXNzPSJjbHMtNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTIuMiAxNjAuNikgcm90YXRlKC03LjE5KSI+PHRzcGFuIHg9IjAiIHk9IjAiPk08L3RzcGFuPjwvdGV4dD48dGV4dCBjbGFzcz0iY2xzLTQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDk4LjA3IDE1MC40Mykgcm90YXRlKC43KSI+PHRzcGFuIHg9IjAiIHk9IjAiPms8L3RzcGFuPjwvdGV4dD48dGV4dCBjbGFzcz0iY2xzLTUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE1OC44IDE1MS4zOSkgcm90YXRlKDYuNDgpIj48dHNwYW4geD0iMCIgeT0iMCI+dDwvdHNwYW4+PC90ZXh0Pjx0ZXh0IGNsYXNzPSJjbHMtNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjA1Ljc1IDE1Ny4wMykgcm90YXRlKDEwLjQxKSI+PHRzcGFuIHg9IjAiIHk9IjAiPiE8L3RzcGFuPjwvdGV4dD48dGV4dCBjbGFzcz0iY2xzLTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDY5LjExIDY3LjY5KSByb3RhdGUoLTMuMDUpIj48dHNwYW4geD0iMCIgeT0iMCI+QTwvdHNwYW4+PC90ZXh0Pjx0ZXh0IGNsYXNzPSJjbHMtMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEyLjI4IDY1LjM1KSByb3RhdGUoLjczKSI+PHRzcGFuIHg9IjAiIHk9IjAiPnE8L3RzcGFuPjwvdGV4dD48dGV4dCBjbGFzcz0iY2xzLTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE1MS42MSA2NS43OSkgcm90YXRlKDQuNDUpIj48dHNwYW4geD0iMCIgeT0iMCI+dTwvdHNwYW4+PC90ZXh0Pjx0ZXh0IGNsYXNzPSJjbHMtMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTkxLjI3IDY5LjExKSByb3RhdGUoNy4xMSkiPjx0c3BhbiB4PSIwIiB5PSIwIj5pPC90c3Bhbj48L3RleHQ+PHRleHQgY2xhc3M9ImNscy0yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMDguMTEgNzEuMjEpIHJvdGF0ZSg4LjU5KSI+PHRzcGFuIHg9IjAiIHk9IjAiPiw8L3RzcGFuPjwvdGV4dD48dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDExLjMxIDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj5NYXJrZXRpbmcgRXN0cmF0w6lnaWNvPC90c3Bhbj48L3RleHQ+PHBhdGggY2xhc3M9ImNscy02IiBkPSJNNDEuNzYsMzIuMDZjNS44LS41OSwxMC44NiwzLjUzLDExLjQ1LDkuMzMuNTgsNS43Mi0zLjU0LDEwLjc5LTkuMzQsMTEuMzgtNS43Mi41OC0xMC43OS0zLjU0LTExLjM3LTkuMjYtLjU5LTUuOCwzLjUzLTEwLjg2LDkuMjYtMTEuNDRaTTQwLjUyLDE5Ljg2YzEyLjY1LTEuMjksMjMuODUsNy44NCwyNS4xNSwyMC40OS40NSw0LjM3LS4zNCw4LjU2LTIuMSwxMi4yNGwtMTYuMTgsMzQuNTItMjIuNzUtMzAuNTVjLTIuNDYtMy4yNS00LjE2LTcuMTgtNC42LTExLjU1LTEuMjktMTIuNjUsNy45MS0yMy44NiwyMC40OS0yNS4xNVoiLz48L2c+PC9nPjwvc3ZnPg==" alt="Aqui, Mkt!">
     </a>
-    <span class="nav-badge">Relatório · 10/08/2026</span>
+    <span class="nav-badge">Relatório · 17/08/2026</span>
   </div>
 </nav>
 
@@ -128,11 +131,11 @@
   <div class="hero-logo">
     <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iQ2FtYWRhXzIiIGRhdGEtbmFtZT0iQ2FtYWRhIDIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDI1MC4zNSAyMTguMTUiPjxkZWZzPjxzdHlsZT4uY2xzLTF7Zm9udC1zaXplOjc2Ljc3cHh9LmNscy0xLC5jbHMtMiwuY2xzLTMsLmNscy00LC5jbHMtNXtmaWxsOiNmZmZ9LmNscy0xLC5jbHMtMiwuY2xzLTQsLmNscy01e2ZvbnQtZmFtaWx5Ok5lZ3JpdGFQcm8sJ05lZ3JpdGEgUHJvJ30uY2xzLTJ7Zm9udC1zaXplOjc2Ljc3cHh9LmNscy0ze2ZvbnQtZmFtaWx5OlNGUHJvRGlzcGxheS1SZWd1bGFyLCdTRiBQcm8gRGlzcGxheSc7Zm9udC1zaXplOjI1LjQ4cHh9LmNscy00e2ZvbnQtc2l6ZToxMTQuNzZweH0uY2xzLTZ7ZmlsbDojMDBmZjAxO2ZpbGwtcnVsZTpldmVub2RkfS5jbHMtNXtmb250LXNpemU6MTE0Ljc2cHh9PC9zdHlsZT48L2RlZnM+PGcgaWQ9IkNhbWFkYV8xLTIiIGRhdGEtbmFtZT0iQ2FtYWRhIDEiPjxnPjx0ZXh0IGNsYXNzPSJjbHMtNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTIuMiAxNjAuNikgcm90YXRlKC03LjE5KSI+PHRzcGFuIHg9IjAiIHk9IjAiPk08L3RzcGFuPjwvdGV4dD48dGV4dCBjbGFzcz0iY2xzLTQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDk4LjA3IDE1MC40Mykgcm90YXRlKC43KSI+PHRzcGFuIHg9IjAiIHk9IjAiPms8L3RzcGFuPjwvdGV4dD48dGV4dCBjbGFzcz0iY2xzLTUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE1OC44IDE1MS4zOSkgcm90YXRlKDYuNDgpIj48dHNwYW4geD0iMCIgeT0iMCI+dDwvdHNwYW4+PC90ZXh0Pjx0ZXh0IGNsYXNzPSJjbHMtNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjA1Ljc1IDE1Ny4wMykgcm90YXRlKDEwLjQxKSI+PHRzcGFuIHg9IjAiIHk9IjAiPiE8L3RzcGFuPjwvdGV4dD48dGV4dCBjbGFzcz0iY2xzLTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDY5LjExIDY3LjY5KSByb3RhdGUoLTMuMDUpIj48dHNwYW4geD0iMCIgeT0iMCI+QTwvdHNwYW4+PC90ZXh0Pjx0ZXh0IGNsYXNzPSJjbHMtMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEyLjI4IDY1LjM1KSByb3RhdGUoLjczKSI+PHRzcGFuIHg9IjAiIHk9IjAiPnE8L3RzcGFuPjwvdGV4dD48dGV4dCBjbGFzcz0iY2xzLTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE1MS42MSA2NS43OSkgcm90YXRlKDQuNDUpIj48dHNwYW4geD0iMCIgeT0iMCI+dTwvdHNwYW4+PC90ZXh0Pjx0ZXh0IGNsYXNzPSJjbHMtMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTkxLjI3IDY5LjExKSByb3RhdGUoNy4xMSkiPjx0c3BhbiB4PSIwIiB5PSIwIj5pPC90c3Bhbj48L3RleHQ+PHRleHQgY2xhc3M9ImNscy0yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMDguMTEgNzEuMjEpIHJvdGF0ZSg4LjU5KSI+PHRzcGFuIHg9IjAiIHk9IjAiPiw8L3RzcGFuPjwvdGV4dD48dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDExLjMxIDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj5NYXJrZXRpbmcgRXN0cmF0w6lnaWNvPC90c3Bhbj48L3RleHQ+PHBhdGggY2xhc3M9ImNscy02IiBkPSJNNDEuNzYsMzIuMDZjNS44LS41OSwxMC44NiwzLjUzLDExLjQ1LDkuMzMuNTgsNS43Mi0zLjU0LDEwLjc5LTkuMzQsMTEuMzgtNS43Mi41OC0xMC43OS0zLjU0LTExLjM3LTkuMjYtLjU5LTUuOCwzLjUzLTEwLjg2LDkuMjYtMTEuNDRaTTQwLjUyLDE5Ljg2YzEyLjY1LTEuMjksMjMuODUsNy44NCwyNS4xNSwyMC40OS40NSw0LjM3LS4zNCw4LjU2LTIuMSwxMi4yNGwtMTYuMTgsMzQuNTItMjIuNzUtMzAuNTVjLTIuNDYtMy4yNS00LjE2LTcuMTgtNC42LTExLjU1LTEuMjktMTIuNjUsNy45MS0yMy44NiwyMC40OS0yNS4xNVoiLz48L2c+PC9nPjwvc3ZnPg==" alt="Aqui, Mkt!">
   </div>
-  <p class="hero-eyebrow">Relatório Semanal · Segunda-feira, 10/08/2026</p>
+  <p class="hero-eyebrow">Relatório Semanal · Segunda-feira, 17/08/2026</p>
   <h1 class="hero-title">Relatório de<br><span>Conteúdo</span></h1>
-  <p class="hero-sub">Estoque de materiais por cliente — semana de <strong style="color:var(--white)">10/08/2026</strong>. Situação identificada e priorizada.</p>
+  <p class="hero-sub">Estoque de materiais por cliente — semana de <strong style="color:var(--white)">17/08/2026</strong>. Situação identificada e priorizada.</p>
   <div class="hero-meta">
-    <span class="meta-pill">📅 10 de Agosto de 2026</span>
+    <span class="meta-pill">📅 17 de Agosto de 2026</span>
     <span class="meta-pill">👤 Maicon → Caio Ribeiro</span>
     <span class="meta-pill">📦 13 clientes</span>
   </div>
@@ -146,13 +149,13 @@
     <h2 class="section-title">Legenda de Prioridade</h2>
     <div class="legend-grid">
       <div class="legend-card green"><div class="legend-dot"></div><div><div class="legend-label">🟢 Verde — OK</div><div class="legend-desc">Mais de 2 semanas de material. Baixa prioridade de ação.</div></div></div>
-      <div class="legend-card yellow"><div class="legend-dot"></div><div><div class="legend-label">🟡 Amarelo — Atenção</div><div class="legend-desc">Aproximadamente 1 semana de material. Agendar gravação em breve.</div></div></div>
-      <div class="legend-card red"><div class="legend-dot"></div><div><div class="legend-label">🔴 Vermelho — Urgente</div><div class="legend-desc">Menos de 1 semana ou sem material. Gravação urgente necessária.</div></div></div>
+      <div class="legend-card yellow"><div class="legend-dot"></div><div><div class="legend-label">🟡 Amarelo — Atenção</div><div class="legend-desc">Aproximadamente 1 semana ou material com datas mapeadas. Agendar nova gravação.</div></div></div>
+      <div class="legend-card red"><div class="legend-dot"></div><div><div class="legend-label">🔴 Vermelho — Urgente</div><div class="legend-desc">Sem material em estoque. Gravação urgente necessária.</div></div></div>
     </div>
     <div class="summary-row">
-      <span class="summary-pill green"><span class="dot"></span> 4 clientes em dia</span>
+      <span class="summary-pill green"><span class="dot"></span> 5 clientes em dia</span>
       <span class="summary-pill yellow"><span class="dot"></span> 5 clientes em atenção</span>
-      <span class="summary-pill red"><span class="dot"></span> 4 urgentes</span>
+      <span class="summary-pill red"><span class="dot"></span> 3 urgentes</span>
     </div>
   </div>
 </section>
@@ -170,36 +173,42 @@
         <div class="kanban-col-header">
           <div class="col-dot green"></div>
           <span class="col-title green">Verde — OK</span>
-          <span class="col-count green">4</span>
+          <span class="col-count green">5</span>
         </div>
 
-        <div class="client-card green" data-days="23" data-max="28">
-          <div class="card-top"><div><div class="client-name">Carnallis</div></div><span class="status-badge green">OK</span></div>
-          <div class="card-deadline">📅 Material até <span class="deadline-date">&nbsp;02/09/2026</span></div>
-          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>23 dias restantes</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
+        <div class="client-card green" data-days="29" data-max="42">
+          <div class="card-top"><div class="client-name">Beira Rio Tintas</div><span class="status-badge green">OK</span></div>
+          <div class="card-deadline">📅 Material até <span class="deadline-date">&nbsp;15/09/2026</span></div>
+          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>29 dias restantes</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
+          <div class="card-note green">✅ Estoque muito confortável. Nenhuma ação necessária.</div>
+        </div>
+
+        <div class="client-card green" data-days="22" data-max="42">
+          <div class="card-top"><div class="client-name">Viva Distribuidora</div><span class="status-badge green">OK</span></div>
+          <div class="card-deadline">📅 Material até <span class="deadline-date">&nbsp;08/09/2026</span></div>
+          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>22 dias restantes</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
           <div class="card-note green">✅ Estoque confortável. Nenhuma ação necessária.</div>
         </div>
 
-        <div class="client-card green" data-days="18" data-max="28">
-          <div class="card-top"><div><div class="client-name">Panda Hortfrut</div></div><span class="status-badge green">OK</span></div>
-          <div class="card-deadline">📅 Material até <span class="deadline-date">&nbsp;28/08/2026</span></div>
-          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>18 dias restantes</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
+        <div class="client-card green" data-days="16" data-max="28">
+          <div class="card-top"><div class="client-name">Carnallis</div><span class="status-badge green">OK</span></div>
+          <div class="card-deadline">📅 Material até <span class="deadline-date">&nbsp;02/09/2026</span></div>
+          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>16 dias restantes</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
           <div class="card-note green">✅ Estoque confortável. Nenhuma ação necessária.</div>
         </div>
 
         <div class="client-card green" data-days="15" data-max="28">
-          <div class="card-top"><div><div class="client-name">Marinha Mercante</div><div class="client-sub">Resp.: Cleverson</div></div><span class="status-badge green">OK</span></div>
-          <div class="card-deadline">📅 Material até <span class="deadline-date">&nbsp;25/08/2026</span></div>
+          <div class="card-top"><div class="client-name">Norte Auto Peças</div><span class="status-badge green">OK</span></div>
+          <div class="card-deadline">📅 Material até <span class="deadline-date">&nbsp;01/09/2026</span></div>
           <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>15 dias restantes</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
           <div class="card-note green">✅ Estoque confortável. Nenhuma ação necessária.</div>
         </div>
 
-        <div class="client-card green" data-days="14" data-max="28">
-          <div class="card-top"><div><div class="client-name">Sua Conquista</div></div><span class="status-badge green">OK</span></div>
-          <div class="card-deadline">📅 <span style="color:var(--muted)">9 materiais + gravação hoje</span></div>
-          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>9 materiais prontos</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
-          <div class="card-note green">✅ 9 materiais prontos. Gravação adicional hoje com Milena às 14h. Fluxo de postagens será repassado no grupo em breve. Ver alinhamento editorial abaixo.</div>
-          <div class="today-tag">🎬 Gravação hoje — Milena às 14h00</div>
+        <div class="client-card green" data-days="11" data-max="28">
+          <div class="card-top"><div class="client-name">Panda Hortfrut</div><span class="status-badge green">OK</span></div>
+          <div class="card-deadline">📅 Material até <span class="deadline-date">&nbsp;28/08/2026</span></div>
+          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>11 dias restantes</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
+          <div class="card-note green">✅ Estoque ok. Monitorar ao longo da semana.</div>
         </div>
       </div>
 
@@ -213,37 +222,43 @@
 
         <div class="client-card yellow" data-days="8" data-max="14">
           <div class="card-top"><div class="client-name">Atual Peças</div><span class="status-badge yellow">Atenção</span></div>
-          <div class="card-deadline">📅 Material até <span class="deadline-date">&nbsp;18/08/2026</span></div>
+          <div class="card-deadline">📅 Material até <span class="deadline-date">&nbsp;25/08/2026</span></div>
+          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>8 dias · 3 materiais</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
+          <div class="card-note yellow">⚠️ Apenas 3 materiais restantes. Agendar nova gravação ainda esta semana.</div>
+        </div>
+
+        <div class="client-card yellow" data-days="8" data-max="14">
+          <div class="card-top"><div><div class="client-name">Marinha Mercante</div><div class="client-sub">Resp.: Cleverson</div></div><span class="status-badge yellow">Atenção</span></div>
+          <div class="card-deadline">📅 Material até <span class="deadline-date">&nbsp;25/08/2026</span></div>
           <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>8 dias restantes</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
           <div class="card-note yellow">⚠️ Menos de 2 semanas. Planejar próxima gravação.</div>
         </div>
 
-        <div class="client-card yellow" data-days="11" data-max="14">
-          <div class="card-top"><div class="client-name">Fênix</div><span class="status-badge yellow">Atenção</span></div>
-          <div class="card-deadline">📅 Material até <span class="deadline-date">&nbsp;21/08/2026</span></div>
-          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>11 dias restantes</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
-          <div class="card-note yellow">⚠️ Menos de 2 semanas. Planejar próxima gravação.</div>
-        </div>
-
-        <div class="client-card yellow" data-days="11" data-max="14">
+        <div class="client-card yellow" data-days="4" data-max="14">
           <div class="card-top"><div class="client-name">HR Grife Modas</div><span class="status-badge yellow">Atenção</span></div>
-          <div class="card-deadline">📅 Material até <span class="deadline-date">&nbsp;21/08/2026</span></div>
-          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>11 dias restantes</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
-          <div class="card-note yellow">⚠️ Menos de 2 semanas. Planejar próxima gravação.</div>
+          <div class="card-deadline">📅 Material pré-produção até <span class="deadline-date">&nbsp;21/08/2026</span></div>
+          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>4 dias restantes</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
+          <div class="card-note yellow">⚠️ Material de pré-produção esgota em 4 dias. Acionar nova gravação.</div>
         </div>
 
         <div class="client-card yellow" data-days="4" data-max="14">
-          <div class="card-top"><div class="client-name">Mercado Moreira</div><span class="status-badge yellow">Atenção</span></div>
-          <div class="card-deadline">📅 Material até <span class="deadline-date">&nbsp;14/08/2026</span></div>
-          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>4 dias restantes</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
-          <div class="card-note yellow">⚠️ Menos de 1 semana. Agendar gravação com urgência.</div>
+          <div class="card-top"><div class="client-name">Fênix</div><span class="status-badge yellow">Mapeado</span></div>
+          <div class="card-deadline">📅 4 materiais · <span class="deadline-date">&nbsp;18/08 → 28/08</span></div>
+          <div class="days-bar-wrap"><div class="days-bar-label"><span>Início: 18/08</span><span>4 posts mapeados</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
+          <div class="card-note yellow">⚠️ 4 materiais com datas definidas (2x/semana). Após 28/08, estoque zerado — planejar próxima gravação.</div>
+          <div class="schedule-pills">
+            <span class="sch-pill">📅 18/08 · Ter</span>
+            <span class="sch-pill">📅 21/08 · Sex</span>
+            <span class="sch-pill">📅 25/08 · Ter</span>
+            <span class="sch-pill">📅 28/08 · Sex</span>
+          </div>
         </div>
 
         <div class="client-card yellow" data-days="4" data-max="14">
-          <div class="card-top"><div class="client-name">Viva Distribuidora</div><span class="status-badge yellow">Atenção</span></div>
-          <div class="card-deadline">📅 Material até <span class="deadline-date">&nbsp;14/08/2026</span></div>
-          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>4 dias restantes</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
-          <div class="card-note yellow">⚠️ Menos de 1 semana. Agendar gravação com urgência.</div>
+          <div class="card-top"><div class="client-name">Sua Conquista</div><span class="status-badge yellow">Atenção</span></div>
+          <div class="card-deadline">📅 <span style="color:var(--muted)">4 materiais restantes</span></div>
+          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>4 materiais</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
+          <div class="card-note yellow">⚠️ 4 materiais disponíveis. Ver alinhamento editorial abaixo para distribuição correta.</div>
         </div>
       </div>
 
@@ -252,39 +267,28 @@
         <div class="kanban-col-header">
           <div class="col-dot red"></div>
           <span class="col-title red">Vermelho — Urgente</span>
-          <span class="col-count red">4</span>
-        </div>
-
-        <div class="client-card red" data-days="1" data-max="7">
-          <div class="card-top"><div class="client-name">Beira Rio Tintas</div><span class="status-badge red">Crítico</span></div>
-          <div class="card-deadline">📅 Material até <span class="deadline-date">&nbsp;11/08/2026</span></div>
-          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>1 dia restante</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
-          <div class="card-note red">🚨 Material esgota amanhã. Gravação IMEDIATA.</div>
-          <div class="alert-tag">🚨 Gravação urgente — esgota amanhã</div>
+          <span class="col-count red">3</span>
         </div>
 
         <div class="client-card red" data-days="0" data-max="7">
-          <div class="card-top"><div class="client-name">Domio</div><span class="status-badge red">Crítico</span></div>
-          <div class="card-deadline">📋 <span style="color:var(--muted)">Apenas 1 material restante</span></div>
-          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>1 material</span></div><div class="days-bar-track"><div class="days-bar-fill" style="width:14%"></div></div></div>
-          <div class="card-note red">🚨 Apenas 1 material em estoque. Gravação urgente necessária.</div>
-          <div class="alert-tag">🚨 Gravação urgente</div>
+          <div class="card-top"><div class="client-name">Domio</div><span class="status-badge red">Sem material</span></div>
+          <div class="card-deadline">📋 <span style="color:var(--muted)">Nenhum material em estoque</span></div>
+          <div class="card-note red">🚨 Sem material. Acionar gravação urgente.</div>
+          <div class="alert-tag">🚨 Gravação urgente necessária</div>
         </div>
 
         <div class="client-card red" data-days="0" data-max="7">
           <div class="card-top"><div class="client-name">Innovare | Construção Seca</div><span class="status-badge red">Zerado</span></div>
-          <div class="card-deadline">📋 <span style="color:var(--muted)">Todo material finalizado</span></div>
-          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>0 materiais</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
-          <div class="card-note red">🚨 Todo o estoque produzido foi publicado. Gravação urgente — retomar intercalação Juliana/Ciro.</div>
-          <div class="alert-tag">🚨 Gravação urgente — estoque zerado</div>
+          <div class="card-deadline">📋 <span style="color:var(--muted)">Estoque zerado</span></div>
+          <div class="card-note red">🚨 Todo o material foi publicado. Retomar intercalação Juliana/Ciro assim que novo material estiver pronto.</div>
+          <div class="alert-tag">🚨 Gravação urgente — ver alinhamento editorial</div>
         </div>
 
         <div class="client-card red" data-days="0" data-max="7">
-          <div class="card-top"><div class="client-name">Norte Auto Peças</div><span class="status-badge red">Zerado</span></div>
-          <div class="card-deadline">📋 <span style="color:var(--muted)">Todo material finalizado</span></div>
-          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>0 materiais</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
-          <div class="card-note red">🚨 Todo o estoque produzido foi publicado. Gravação urgente necessária.</div>
-          <div class="alert-tag">🚨 Gravação urgente — estoque zerado</div>
+          <div class="card-top"><div class="client-name">Mercado Moreira</div><span class="status-badge red">Sem material</span></div>
+          <div class="card-deadline">📋 <span style="color:var(--muted)">Nenhum material em estoque</span></div>
+          <div class="card-note red">🚨 Sem material. Acionar gravação urgente.</div>
+          <div class="alert-tag">🚨 Gravação urgente necessária</div>
         </div>
       </div>
 
@@ -294,7 +298,6 @@
 
 <div class="divider"></div>
 
-<!-- ALINHAMENTOS EDITORIAIS -->
 <section class="align-section" id="alinhamentos">
   <div class="container">
     <p class="section-label">Alinhamentos Editoriais</p>
@@ -310,8 +313,8 @@
           </div>
         </div>
         <div class="align-rules">
-          <div class="align-rule"><div class="rule-dot"></div>Publicações sempre alternando entre <strong style="color:var(--green)">Juliana</strong> e <strong style="color:#7ab4ff">Ciro</strong> — nunca dois do mesmo perfil em sequência.</div>
-          <div class="align-rule"><div class="rule-dot"></div>Retomar a intercalação assim que o novo material estiver pronto.</div>
+          <div class="align-rule"><div class="rule-dot"></div>Sempre alternar entre <strong style="color:var(--green)">Juliana</strong> e <strong style="color:#7ab4ff">Ciro</strong> — nunca dois do mesmo perfil em sequência.</div>
+          <div class="align-rule"><div class="rule-dot"></div>Retomar a intercalação assim que o novo material estiver gravado e editado.</div>
         </div>
         <div class="schedule-intercal" style="grid-template-columns:1fr 1fr">
           <div class="day-block" style="border-color:rgba(0,255,1,.35);background:rgba(0,255,1,.06)">
@@ -330,13 +333,12 @@
           <div class="align-avatar">🏆</div>
           <div>
             <div class="align-client-name">Sua Conquista</div>
-            <div class="align-subtitle">3x/semana — fluxo a ser repassado no grupo</div>
+            <div class="align-subtitle">3x/semana — Seg, Qua, Sex</div>
           </div>
         </div>
         <div class="align-rules">
           <div class="align-rule"><div class="rule-dot"></div><strong style="color:var(--white)">Segunda e Sexta:</strong> vídeo da <strong style="color:var(--green)">Mariana</strong>.</div>
           <div class="align-rule"><div class="rule-dot"></div><strong style="color:var(--white)">Quarta-feira:</strong> vídeo das <strong style="color:#ffc800">Corretoras</strong> — nunca da Mariana.</div>
-          <div class="align-rule"><div class="rule-dot"></div>Gravação hoje com Milena às 14h. Fluxo completo será repassado no grupo após organização.</div>
         </div>
         <div class="schedule-intercal" style="grid-template-columns:1fr 1fr 1fr">
           <div class="day-block" style="border-color:rgba(0,255,1,.35);background:rgba(0,255,1,.06)">
@@ -362,7 +364,7 @@
 
 <footer class="footer">
   <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iQ2FtYWRhXzIiIGRhdGEtbmFtZT0iQ2FtYWRhIDIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDI1MC4zNSAyMTguMTUiPjxkZWZzPjxzdHlsZT4uY2xzLTF7Zm9udC1zaXplOjc2Ljc3cHh9LmNscy0xLC5jbHMtMiwuY2xzLTMsLmNscy00LC5jbHMtNXtmaWxsOiNmZmZ9LmNscy0xLC5jbHMtMiwuY2xzLTQsLmNscy01e2ZvbnQtZmFtaWx5Ok5lZ3JpdGFQcm8sJ05lZ3JpdGEgUHJvJ30uY2xzLTJ7Zm9udC1zaXplOjc2Ljc3cHh9LmNscy0ze2ZvbnQtZmFtaWx5OlNGUHJvRGlzcGxheS1SZWd1bGFyLCdTRiBQcm8gRGlzcGxheSc7Zm9udC1zaXplOjI1LjQ4cHh9LmNscy00e2ZvbnQtc2l6ZToxMTQuNzZweH0uY2xzLTZ7ZmlsbDojMDBmZjAxO2ZpbGwtcnVsZTpldmVub2RkfS5jbHMtNXtmb250LXNpemU6MTE0Ljc2cHh9PC9zdHlsZT48L2RlZnM+PGcgaWQ9IkNhbWFkYV8xLTIiIGRhdGEtbmFtZT0iQ2FtYWRhIDEiPjxnPjx0ZXh0IGNsYXNzPSJjbHMtNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTIuMiAxNjAuNikgcm90YXRlKC03LjE5KSI+PHRzcGFuIHg9IjAiIHk9IjAiPk08L3RzcGFuPjwvdGV4dD48dGV4dCBjbGFzcz0iY2xzLTQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDk4LjA3IDE1MC40Mykgcm90YXRlKC43KSI+PHRzcGFuIHg9IjAiIHk9IjAiPms8L3RzcGFuPjwvdGV4dD48dGV4dCBjbGFzcz0iY2xzLTUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE1OC44IDE1MS4zOSkgcm90YXRlKDYuNDgpIj48dHNwYW4geD0iMCIgeT0iMCI+dDwvdHNwYW4+PC90ZXh0Pjx0ZXh0IGNsYXNzPSJjbHMtNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjA1Ljc1IDE1Ny4wMykgcm90YXRlKDEwLjQxKSI+PHRzcGFuIHg9IjAiIHk9IjAiPiE8L3RzcGFuPjwvdGV4dD48dGV4dCBjbGFzcz0iY2xzLTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDY5LjExIDY3LjY5KSByb3RhdGUoLTMuMDUpIj48dHNwYW4geD0iMCIgeT0iMCI+QTwvdHNwYW4+PC90ZXh0Pjx0ZXh0IGNsYXNzPSJjbHMtMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEyLjI4IDY1LjM1KSByb3RhdGUoLjczKSI+PHRzcGFuIHg9IjAiIHk9IjAiPnE8L3RzcGFuPjwvdGV4dD48dGV4dCBjbGFzcz0iY2xzLTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE1MS42MSA2NS43OSkgcm90YXRlKDQuNDUpIj48dHNwYW4geD0iMCIgeT0iMCI+dTwvdHNwYW4+PC90ZXh0Pjx0ZXh0IGNsYXNzPSJjbHMtMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTkxLjI3IDY5LjExKSByb3RhdGUoNy4xMSkiPjx0c3BhbiB4PSIwIiB5PSIwIj5pPC90c3Bhbj48L3RleHQ+PHRleHQgY2xhc3M9ImNscy0yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMDguMTEgNzEuMjEpIHJvdGF0ZSg4LjU5KSI+PHRzcGFuIHg9IjAiIHk9IjAiPiw8L3RzcGFuPjwvdGV4dD48dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDExLjMxIDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj5NYXJrZXRpbmcgRXN0cmF0w6lnaWNvPC90c3Bhbj48L3RleHQ+PHBhdGggY2xhc3M9ImNscy02IiBkPSJNNDEuNzYsMzIuMDZjNS44LS41OSwxMC44NiwzLjUzLDExLjQ1LDkuMzMuNTgsNS43Mi0zLjU0LDEwLjc5LTkuMzQsMTEuMzgtNS43Mi41OC0xMC43OS0zLjU0LTExLjM3LTkuMjYtLjU5LTUuOCwzLjUzLTEwLjg2LDkuMjYtMTEuNDRaTTQwLjUyLDE5Ljg2YzEyLjY1LTEuMjksMjMuODUsNy44NCwyNS4xNSwyMC40OS40NSw0LjM3LS4zNCw4LjU2LTIuMSwxMi4yNGwtMTYuMTgsMzQuNTItMjIuNzUtMzAuNTVjLTIuNDYtMy4yNS00LjE2LTcuMTgtNC42LTExLjU1LTEuMjktMTIuNjUsNy45MS0yMy44NiwyMC40OS0yNS4xNVoiLz48L2c+PC9nPjwvc3ZnPg==" alt="Aqui, Mkt!">
-  <p class="footer-sub">Marketing Estratégico · Relatório Semanal · 10/08/2026<br>Preparado por Maicon para Caio Ribeiro</p>
+  <p class="footer-sub">Marketing Estratégico · Relatório Semanal · 17/08/2026<br>Preparado por Maicon para Caio Ribeiro</p>
 </footer>
 
 <script>
