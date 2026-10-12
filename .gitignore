@@ -1,0 +1,9 @@
+.cache/
+.claude/
+.config/
+.npm/
+.npm-global/
+.pki/
+.ssh/
+.gitconfig
+.wget-hsts
