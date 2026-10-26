@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Relatório Semanal — 20/10/2026 — Aqui, Mkt!</title>
+<title>Relatório Semanal — 26/10/2026 — Aqui, Mkt!</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -69,7 +69,6 @@
   .client-card.green::before{background:var(--k-green)}.client-card.yellow::before{background:var(--k-yellow)}.client-card.red::before{background:var(--k-red)}.client-card.gray::before{background:var(--k-gray)}
   .card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:8px}
   .client-name{font-family:'Syne',sans-serif;font-size:13px;font-weight:700;color:var(--white);line-height:1.3}
-  .client-sub{font-size:9px;color:var(--muted);margin-top:2px}
   .status-badge{flex-shrink:0;padding:2px 8px;border-radius:100px;font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
   .status-badge.green{background:var(--k-green-bg);color:var(--k-green);border:1px solid var(--k-green-border)}.status-badge.yellow{background:var(--k-yellow-bg);color:var(--k-yellow);border:1px solid var(--k-yellow-border)}.status-badge.red{background:var(--k-red-bg);color:var(--k-red);border:1px solid var(--k-red-border)}.status-badge.gray{background:var(--k-gray-bg);color:var(--k-gray);border:1px solid var(--k-gray-border)}
   .card-deadline{font-size:11px;color:var(--muted);margin-bottom:6px}
@@ -83,21 +82,15 @@
   .days-bar-fill{height:100%;border-radius:2px;width:0%;transition:width 1.2s cubic-bezier(.4,0,.2,1) .4s}
   .client-card.green .days-bar-fill{background:var(--k-green)}.client-card.yellow .days-bar-fill{background:var(--k-yellow)}.client-card.red .days-bar-fill{background:var(--k-red)}
   .alert-tag{display:inline-flex;align-items:center;gap:4px;padding:3px 8px;border-radius:6px;background:rgba(255,60,60,.1);border:1px solid rgba(255,60,60,.35);font-size:9px;font-weight:700;color:#ff7070;margin-top:7px}
-  .today-tag{display:inline-flex;align-items:center;gap:4px;padding:3px 8px;border-radius:6px;background:rgba(255,200,0,.1);border:1px solid rgba(255,200,0,.35);font-size:9px;font-weight:700;color:var(--k-yellow);margin-top:7px}
-  .new-tag{display:inline-flex;align-items:center;gap:4px;padding:3px 8px;border-radius:6px;background:rgba(180,120,255,.1);border:1px solid rgba(180,120,255,.35);font-size:9px;font-weight:700;color:#c084fc;margin-top:7px}
-  /* TRÁFEGO */
+  .warn-tag{display:inline-flex;align-items:center;gap:4px;padding:3px 8px;border-radius:6px;background:rgba(255,200,0,.1);border:1px solid rgba(255,200,0,.35);font-size:9px;font-weight:700;color:var(--k-yellow);margin-top:7px}
   .traffic-section{padding:0 0 60px}
   .traffic-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
   .traffic-card{background:var(--surface);border-radius:var(--radius);border:1px solid var(--k-gray-border);padding:16px 18px;position:relative;overflow:hidden;opacity:0;transform:translateY(12px);transition:opacity .5s ease,transform .5s ease}
   .traffic-card.visible{opacity:1;transform:translateY(0)}
   .traffic-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:3px 0 0 3px;background:var(--k-gray)}
-  .traffic-card.upgrade::before{background:#c084fc}
-  .traffic-card.upgrade{border-color:rgba(180,120,255,.3)}
   .traffic-name{font-family:'Syne',sans-serif;font-size:13px;font-weight:700;color:var(--white);margin-bottom:4px}
   .traffic-type{font-size:10px;color:var(--muted);margin-bottom:6px}
   .traffic-note{font-size:10px;color:var(--muted);line-height:1.5;padding:6px 8px;border-radius:7px;background:rgba(140,140,140,.05)}
-  .traffic-card.upgrade .traffic-note{background:rgba(180,120,255,.05)}
-  /* ALIGN */
   .align-section{padding:60px 0;border-top:1px solid var(--border)}
   .align-card{background:var(--surface);border:1px solid rgba(100,160,255,.22);border-radius:var(--radius);padding:24px;position:relative;overflow:hidden;opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease;max-width:620px}
   .align-card.visible{opacity:1;transform:translateY(0)}
@@ -128,25 +121,24 @@
 <nav class="nav">
   <div class="nav-inner">
     <img class="nav-logo" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iQ2FtYWRhXzIiIGRhdGEtbmFtZT0iQ2FtYWRhIDIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDI1MC4zNSAyMTguMTUiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZvbnQtc2l6ZTogNzYuNzdweDsKICAgICAgfQoKICAgICAgLmNscy0xLCAuY2xzLTIsIC5jbHMtMywgLmNscy00LCAuY2xzLTUgewogICAgICAgIGZpbGw6ICNmZmY7CiAgICAgIH0KCiAgICAgIC5jbHMtMSwgLmNscy0yLCAuY2xzLTQsIC5jbHMtNSB7CiAgICAgICAgZm9udC1mYW1pbHk6IE5lZ3JpdGFQcm8sICdOZWdyaXRhIFBybyc7CiAgICAgIH0KCiAgICAgIC5jbHMtMiB7CiAgICAgICAgZm9udC1zaXplOiA3Ni43N3B4OwogICAgICB9CgogICAgICAuY2xzLTMgewogICAgICAgIGZvbnQtZmFtaWx5OiBTRlByb0Rpc3BsYXktUmVndWxhciwgJ1NGIFBybyBEaXNwbGF5JzsKICAgICAgICBmb250LXNpemU6IDI1LjQ4cHg7CiAgICAgIH0KCiAgICAgIC5jbHMtNCB7CiAgICAgICAgZm9udC1zaXplOiAxMTQuNzZweDsKICAgICAgfQoKICAgICAgLmNscy02IHsKICAgICAgICBmaWxsOiAjMDBmZjAxOwogICAgICAgIGZpbGwtcnVsZTogZXZlbm9kZDsKICAgICAgfQoKICAgICAgLmNscy01IHsKICAgICAgICBmb250LXNpemU6IDExNC43NnB4OwogICAgICB9CiAgICA8L3N0eWxlPgogIDwvZGVmcz4KICA8ZyBpZD0iQ2FtYWRhXzEtMiIgZGF0YS1uYW1lPSJDYW1hZGEgMSI+CiAgICA8Zz4KICAgICAgPHRleHQgY2xhc3M9ImNscy01IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMi4yIDE2MC42KSByb3RhdGUoLTcuMTkpIj48dHNwYW4geD0iMCIgeT0iMCI+TTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDk4LjA3IDE1MC40Mykgcm90YXRlKC43KSI+PHRzcGFuIHg9IjAiIHk9IjAiPms8L3RzcGFuPjwvdGV4dD4KICAgICAgPHRleHQgY2xhc3M9ImNscy01IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNTguOCAxNTEuMzkpIHJvdGF0ZSg2LjQ4KSI+PHRzcGFuIHg9IjAiIHk9IjAiPnQ8L3RzcGFuPjwvdGV4dD4KICAgICAgPHRleHQgY2xhc3M9ImNscy00IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMDUuNzUgMTU3LjAzKSByb3RhdGUoMTAuNDEpIj48dHNwYW4geD0iMCIgeT0iMCI+ITwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDY5LjExIDY3LjY5KSByb3RhdGUoLTMuMDUpIj48dHNwYW4geD0iMCIgeT0iMCI+QTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDExMi4yOCA2NS4zNSkgcm90YXRlKC43MykiPjx0c3BhbiB4PSIwIiB5PSIwIj5xPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTUxLjYxIDY1Ljc5KSByb3RhdGUoNC40NSkiPjx0c3BhbiB4PSIwIiB5PSIwIj51PC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTkxLjI3IDY5LjExKSByb3RhdGUoNy4xMSkiPjx0c3BhbiB4PSIwIiB5PSIwIj5pPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjA4LjExIDcxLjIxKSByb3RhdGUoOC41OSkiPjx0c3BhbiB4PSIwIiB5PSIwIj4sPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEuMzEgMjA3LjM0KSI+PHRzcGFuIHg9IjAiIHk9IjAiPk08L3RzcGFuPjwvdGV4dD4KICAgICAgPHRleHQgY2xhc3M9ImNscy0zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMi4wOSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+YTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ0Ljg1IDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj5yPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTIuNjcgMjA3LjM0KSI+PHRzcGFuIHg9IjAiIHk9IjAiPms8L3RzcGFuPjwvdGV4dD4KICAgICAgPHRleHQgY2xhc3M9ImNscy0zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2NC4zOSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+ZTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDc3LjQyIDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj50PC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODUuMDcgMjA3LjM0KSI+PHRzcGFuIHg9IjAiIHk9IjAiPmk8L3RzcGFuPjwvdGV4dD4KICAgICAgPHRleHQgY2xhc3M9ImNscy0zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5MC4yNCAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+bjwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwMy42NCAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+ZzwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDExNy42MSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+IDwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyMi44MSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+RTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEzNi44NSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+czwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE0OC42OCAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+dDwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE1Ni4zMyAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+cjwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE2My45IDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj5hPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTc2LjY3IDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj50PC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTgzLjk0IDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj7DqTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE5Ni45NyAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+ZzwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIxMC45NCAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+aTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIxNi4xMSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+YzwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIyOC44NSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+bzwvdHNwYW4+PC90ZXh0PgogICAgICA8cGF0aCBjbGFzcz0iY2xzLTYiIGQ9Ik00MS43NiwzMi4wNmM1LjgtLjU5LDEwLjg2LDMuNTMsMTEuNDUsOS4zMy41OCw1LjcyLTMuNTQsMTAuNzktOS4zNCwxMS4zOC01LjcyLjU4LTEwLjc5LTMuNTQtMTEuMzctOS4yNi0uNTktNS44LDMuNTMtMTAuODYsOS4yNi0xMS40NFpNNDAuNTIsMTkuODZjMTIuNjUtMS4yOSwyMy44NSw3Ljg0LDI1LjE1LDIwLjQ5LjQ1LDQuMzctLjM0LDguNTYtMi4xLDEyLjI0bC0xNi4xOCwzNC41Mi0yMi43NS0zMC41NWMtMi40Ni0zLjI1LTQuMTYtNy4xOC00LjYtMTEuNTUtMS4yOS0xMi42NSw3LjkxLTIzLjg2LDIwLjQ5LTI1LjE1WiIvPgogICAgPC9nPgogIDwvZz4KPC9zdmc+" alt="Aqui, Mkt!">
-    <span class="nav-badge">Relatório · 20/10/2026</span>
+    <span class="nav-badge">Relatório · 26/10/2026</span>
   </div>
 </nav>
 
 <header class="hero" id="top">
   <div class="hero-logo"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iQ2FtYWRhXzIiIGRhdGEtbmFtZT0iQ2FtYWRhIDIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDI1MC4zNSAyMTguMTUiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZvbnQtc2l6ZTogNzYuNzdweDsKICAgICAgfQoKICAgICAgLmNscy0xLCAuY2xzLTIsIC5jbHMtMywgLmNscy00LCAuY2xzLTUgewogICAgICAgIGZpbGw6ICNmZmY7CiAgICAgIH0KCiAgICAgIC5jbHMtMSwgLmNscy0yLCAuY2xzLTQsIC5jbHMtNSB7CiAgICAgICAgZm9udC1mYW1pbHk6IE5lZ3JpdGFQcm8sICdOZWdyaXRhIFBybyc7CiAgICAgIH0KCiAgICAgIC5jbHMtMiB7CiAgICAgICAgZm9udC1zaXplOiA3Ni43N3B4OwogICAgICB9CgogICAgICAuY2xzLTMgewogICAgICAgIGZvbnQtZmFtaWx5OiBTRlByb0Rpc3BsYXktUmVndWxhciwgJ1NGIFBybyBEaXNwbGF5JzsKICAgICAgICBmb250LXNpemU6IDI1LjQ4cHg7CiAgICAgIH0KCiAgICAgIC5jbHMtNCB7CiAgICAgICAgZm9udC1zaXplOiAxMTQuNzZweDsKICAgICAgfQoKICAgICAgLmNscy02IHsKICAgICAgICBmaWxsOiAjMDBmZjAxOwogICAgICAgIGZpbGwtcnVsZTogZXZlbm9kZDsKICAgICAgfQoKICAgICAgLmNscy01IHsKICAgICAgICBmb250LXNpemU6IDExNC43NnB4OwogICAgICB9CiAgICA8L3N0eWxlPgogIDwvZGVmcz4KICA8ZyBpZD0iQ2FtYWRhXzEtMiIgZGF0YS1uYW1lPSJDYW1hZGEgMSI+CiAgICA8Zz4KICAgICAgPHRleHQgY2xhc3M9ImNscy01IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMi4yIDE2MC42KSByb3RhdGUoLTcuMTkpIj48dHNwYW4geD0iMCIgeT0iMCI+TTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDk4LjA3IDE1MC40Mykgcm90YXRlKC43KSI+PHRzcGFuIHg9IjAiIHk9IjAiPms8L3RzcGFuPjwvdGV4dD4KICAgICAgPHRleHQgY2xhc3M9ImNscy01IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNTguOCAxNTEuMzkpIHJvdGF0ZSg2LjQ4KSI+PHRzcGFuIHg9IjAiIHk9IjAiPnQ8L3RzcGFuPjwvdGV4dD4KICAgICAgPHRleHQgY2xhc3M9ImNscy00IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMDUuNzUgMTU3LjAzKSByb3RhdGUoMTAuNDEpIj48dHNwYW4geD0iMCIgeT0iMCI+ITwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDY5LjExIDY3LjY5KSByb3RhdGUoLTMuMDUpIj48dHNwYW4geD0iMCIgeT0iMCI+QTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDExMi4yOCA2NS4zNSkgcm90YXRlKC43MykiPjx0c3BhbiB4PSIwIiB5PSIwIj5xPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTUxLjYxIDY1Ljc5KSByb3RhdGUoNC40NSkiPjx0c3BhbiB4PSIwIiB5PSIwIj51PC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTkxLjI3IDY5LjExKSByb3RhdGUoNy4xMSkiPjx0c3BhbiB4PSIwIiB5PSIwIj5pPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjA4LjExIDcxLjIxKSByb3RhdGUoOC41OSkiPjx0c3BhbiB4PSIwIiB5PSIwIj4sPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEuMzEgMjA3LjM0KSI+PHRzcGFuIHg9IjAiIHk9IjAiPk08L3RzcGFuPjwvdGV4dD4KICAgICAgPHRleHQgY2xhc3M9ImNscy0zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMi4wOSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+YTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ0Ljg1IDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj5yPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTIuNjcgMjA3LjM0KSI+PHRzcGFuIHg9IjAiIHk9IjAiPms8L3RzcGFuPjwvdGV4dD4KICAgICAgPHRleHQgY2xhc3M9ImNscy0zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2NC4zOSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+ZTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDc3LjQyIDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj50PC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODUuMDcgMjA3LjM0KSI+PHRzcGFuIHg9IjAiIHk9IjAiPmk8L3RzcGFuPjwvdGV4dD4KICAgICAgPHRleHQgY2xhc3M9ImNscy0zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5MC4yNCAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+bjwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwMy42NCAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+ZzwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDExNy42MSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+IDwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyMi44MSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+RTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEzNi44NSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+czwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE0OC42OCAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+dDwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE1Ni4zMyAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+cjwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE2My45IDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj5hPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTc2LjY3IDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj50PC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTgzLjk0IDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj7DqTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE5Ni45NyAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+ZzwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIxMC45NCAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+aTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIxNi4xMSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+YzwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIyOC44NSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+bzwvdHNwYW4+PC90ZXh0PgogICAgICA8cGF0aCBjbGFzcz0iY2xzLTYiIGQ9Ik00MS43NiwzMi4wNmM1LjgtLjU5LDEwLjg2LDMuNTMsMTEuNDUsOS4zMy41OCw1LjcyLTMuNTQsMTAuNzktOS4zNCwxMS4zOC01LjcyLjU4LTEwLjc5LTMuNTQtMTEuMzctOS4yNi0uNTktNS44LDMuNTMtMTAuODYsOS4yNi0xMS40NFpNNDAuNTIsMTkuODZjMTIuNjUtMS4yOSwyMy44NSw3Ljg0LDI1LjE1LDIwLjQ5LjQ1LDQuMzctLjM0LDguNTYtMi4xLDEyLjI0bC0xNi4xOCwzNC41Mi0yMi43NS0zMC41NWMtMi40Ni0zLjI1LTQuMTYtNy4xOC00LjYtMTEuNTUtMS4yOS0xMi42NSw3LjkxLTIzLjg2LDIwLjQ5LTI1LjE1WiIvPgogICAgPC9nPgogIDwvZz4KPC9zdmc+" alt="Aqui, Mkt!"></div>
-  <p class="hero-eyebrow">Relatório Semanal de Conteúdo · Terça-feira, 20/10/2026</p>
+  <p class="hero-eyebrow">Relatório Semanal de Conteúdo · Segunda-feira, 26/10/2026</p>
   <h1 class="hero-title">Relatório de<br><span>Conteúdo</span></h1>
-  <p class="hero-sub">Estoque de materiais — semana de <strong style="color:var(--white)">20/10/2026</strong>. 11 clientes social media + 7 tráfego.</p>
+  <p class="hero-sub">Estoque de materiais — semana de <strong style="color:var(--white)">26/10/2026</strong>. 10 clientes social media + 7 tráfego.</p>
   <div class="hero-meta">
-    <span class="meta-pill">📅 20 de Outubro de 2026</span>
+    <span class="meta-pill">📅 26 de Outubro de 2026</span>
     <span class="meta-pill">👤 Maicon → Caio Ribeiro</span>
-    <span class="meta-pill">📦 11 social media · 7 tráfego</span>
+    <span class="meta-pill">📦 10 social media · 7 tráfego</span>
   </div>
 </header>
 
 <div class="divider"></div>
 
-<!-- LEGENDA -->
 <section class="legend-section">
   <div class="container">
     <p class="section-label">Sistema Kanban</p>
@@ -155,20 +147,19 @@
       <div class="legend-card green"><div class="legend-dot"></div><div><div class="legend-label">🟢 Verde — OK</div><div class="legend-desc">Mais de 2 semanas. Sem ação necessária.</div></div></div>
       <div class="legend-card yellow"><div class="legend-dot"></div><div><div class="legend-label">🟡 Amarelo — Atenção</div><div class="legend-desc">1–2 semanas restantes. Planejar gravação.</div></div></div>
       <div class="legend-card red"><div class="legend-dot"></div><div><div class="legend-label">🔴 Vermelho — Urgente</div><div class="legend-desc">Menos de 1 semana ou zerado. Gravar já.</div></div></div>
-      <div class="legend-card gray"><div class="legend-dot"></div><div><div class="legend-label">⚫ Sem continuidade</div><div class="legend-desc">Projeto pausado ou sem material previsto.</div></div></div>
+      <div class="legend-card gray"><div class="legend-dot"></div><div><div class="legend-label">⚫ Zerado / Sem material</div><div class="legend-desc">Sem material para produção. Gravar urgente.</div></div></div>
     </div>
     <div class="summary-row">
-      <span class="summary-pill green"><span class="dot"></span> 2 em dia</span>
+      <span class="summary-pill green"><span class="dot"></span> 4 em dia</span>
       <span class="summary-pill yellow"><span class="dot"></span> 3 em atenção</span>
-      <span class="summary-pill red"><span class="dot"></span> 5 urgentes</span>
-      <span class="summary-pill gray"><span class="dot"></span> 1 sem continuidade</span>
+      <span class="summary-pill red"><span class="dot"></span> 1 crítico</span>
+      <span class="summary-pill gray"><span class="dot"></span> 2 sem material</span>
     </div>
   </div>
 </section>
 
 <div class="divider"></div>
 
-<!-- KANBAN SOCIAL MEDIA -->
 <section class="kanban-section" id="clientes">
   <div class="container">
     <p class="section-label">Social Media</p>
@@ -180,20 +171,34 @@
         <div class="kanban-col-header">
           <div class="col-dot green"></div>
           <span class="col-title green">Verde — OK</span>
-          <span class="col-count green">2</span>
+          <span class="col-count green">4</span>
         </div>
 
-        <div class="client-card green" data-days="24" data-max="42">
+        <div class="client-card green" data-days="32" data-max="42">
+          <div class="card-top"><div><div class="client-name">Bronze da Sheila</div></div><span class="status-badge green">OK</span></div>
+          <div class="card-deadline">📅 Até <span class="deadline-date">27/11/2026</span> · 32 dias</div>
+          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>32 dias</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
+          <div class="card-note green">✅ Estoque confortável. Sem ação necessária.</div>
+        </div>
+
+        <div class="client-card green" data-days="18" data-max="42">
           <div class="card-top"><div><div class="client-name">Viva Distribuidora</div></div><span class="status-badge green">OK</span></div>
-          <div class="card-deadline">📅 Até <span class="deadline-date">13/11/2026</span></div>
-          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>24 dias</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
-          <div class="card-note green">✅ Estoque confortável. Sem ação necessária esta semana.</div>
+          <div class="card-deadline">📅 Até <span class="deadline-date">13/11/2026</span> · 18 dias</div>
+          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>18 dias</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
+          <div class="card-note green">✅ Estoque ok. Monitorar na próxima semana.</div>
         </div>
 
-        <div class="client-card green" data-days="20" data-max="42">
+        <div class="client-card green" data-days="15" data-max="42">
+          <div class="card-top"><div><div class="client-name">Cleverson Monteiro</div></div><span class="status-badge green">OK</span></div>
+          <div class="card-deadline">📅 Até <span class="deadline-date">10/11/2026</span> · 15 dias</div>
+          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>15 dias</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
+          <div class="card-note green">✅ Estoque ok. Monitorar na próxima semana.</div>
+        </div>
+
+        <div class="client-card green" data-days="15" data-max="42">
           <div class="card-top"><div><div class="client-name">Fênix Autopeças</div></div><span class="status-badge green">OK</span></div>
-          <div class="card-deadline">📅 Até <span class="deadline-date">09/11/2026</span></div>
-          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>20 dias</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
+          <div class="card-deadline">📅 Até <span class="deadline-date">10/11/2026</span> · 15 dias</div>
+          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>15 dias</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
           <div class="card-note green">✅ Estoque ok. Monitorar na próxima semana.</div>
         </div>
       </div>
@@ -206,26 +211,27 @@
           <span class="col-count yellow">3</span>
         </div>
 
-        <div class="client-card yellow" data-days="10" data-max="14">
-          <div class="card-top"><div><div class="client-name">Ludier</div></div><span class="status-badge yellow">Atenção</span></div>
-          <div class="card-deadline">📅 Até <span class="deadline-date">30/10/2026</span> · 10 dias</div>
-          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>10 dias</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
-          <div class="card-note yellow">⚠️ 10 dias restantes. Agendar gravação esta semana.</div>
-        </div>
-
-        <div class="client-card yellow" data-days="7" data-max="14">
-          <div class="card-top"><div><div class="client-name">Recheata</div></div><span class="status-badge yellow">Atenção</span></div>
-          <div class="card-deadline">📅 Até <span class="deadline-date">27/10/2026</span> · 7 dias</div>
-          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>7 dias</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
-          <div class="card-note yellow">⚠️ 7 dias. Agendar nova gravação com urgência.</div>
-        </div>
-
-        <div class="client-card yellow" data-days="3" data-max="14">
+        <div class="client-card yellow" data-days="11" data-max="14">
           <div class="card-top"><div><div class="client-name">Beira Rio Tintas</div></div><span class="status-badge yellow">Atenção</span></div>
-          <div class="card-deadline">📅 Posts: <span class="deadline-date">hoje (20)</span> e <span class="deadline-date">23/10</span></div>
-          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>3 dias</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
-          <div class="card-note yellow">⚠️ Apenas 2 posts restantes. Gravar na semana que vem.</div>
-          <div class="today-tag">📌 Post hoje + 23/10</div>
+          <div class="card-deadline">📅 Até <span class="deadline-date">06/11/2026</span> · 11 dias</div>
+          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>11 dias</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
+          <div class="card-note yellow">⚠️ 11 dias. Agendar gravação esta semana.</div>
+        </div>
+
+        <div class="client-card yellow" data-days="4" data-max="14">
+          <div class="card-top"><div><div class="client-name">Domio</div></div><span class="status-badge yellow">Atenção</span></div>
+          <div class="card-deadline">📅 Até <span class="deadline-date">30/10/2026</span> · 4 dias</div>
+          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>4 dias</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
+          <div class="card-note yellow">⚠️ Apenas 4 dias. Gravar com urgência esta semana.</div>
+          <div class="warn-tag">⏰ Vence 30/10</div>
+        </div>
+
+        <div class="client-card yellow" data-days="4" data-max="14">
+          <div class="card-top"><div><div class="client-name">Ludier</div></div><span class="status-badge yellow">Atenção</span></div>
+          <div class="card-deadline">📅 Até <span class="deadline-date">30/10/2026</span> · 4 dias</div>
+          <div class="days-bar-wrap"><div class="days-bar-label"><span>Hoje</span><span>4 dias</span></div><div class="days-bar-track"><div class="days-bar-fill"></div></div></div>
+          <div class="card-note yellow">⚠️ Apenas 4 dias. Gravar com urgência esta semana.</div>
+          <div class="warn-tag">⏰ Vence 30/10</div>
         </div>
       </div>
 
@@ -234,64 +240,54 @@
         <div class="kanban-col-header">
           <div class="col-dot red"></div>
           <span class="col-title red">Vermelho — Urgente</span>
-          <span class="col-count red">5</span>
+          <span class="col-count red">1</span>
         </div>
 
-        <div class="client-card red" data-days="0" data-max="7">
-          <div class="card-top"><div><div class="client-name">Atual Peças</div></div><span class="status-badge red">Zerado</span></div>
-          <div class="card-deadline">📋 Último post: <span class="deadline-date" style="color:var(--k-red)">hoje (20/10)</span></div>
-          <div class="card-note red">🚨 Último post hoje — zerado a partir de amanhã. Gravar urgente.</div>
-          <div class="today-tag">📌 Último post hoje</div>
-          <div class="alert-tag">🚨 Gravar urgente</div>
+        <div class="client-card red" data-days="1" data-max="7">
+          <div class="card-top"><div><div class="client-name">Recheata</div></div><span class="status-badge red">Crítico</span></div>
+          <div class="card-deadline">📅 Último material: <span class="deadline-date">27/10/2026</span> · amanhã</div>
+          <div class="card-note red">🚨 Último post amanhã (27/10). Zera na quarta. Gravar urgente.</div>
+          <div class="alert-tag">🚨 Último post amanhã</div>
         </div>
 
-        <div class="client-card red" data-days="0" data-max="7">
-          <div class="card-top"><div><div class="client-name">Panda Hortfrut</div></div><span class="status-badge red">Zerado</span></div>
-          <div class="card-deadline">📋 Último post: <span class="deadline-date" style="color:var(--k-red)">hoje (20/10)</span></div>
-          <div class="card-note red">🚨 Último post hoje — zerado a partir de amanhã. Gravar urgente.</div>
-          <div class="today-tag">📌 Último post hoje</div>
-          <div class="alert-tag">🚨 Gravar urgente</div>
-        </div>
-
-        <div class="client-card red" data-days="0" data-max="7">
-          <div class="card-top"><div><div class="client-name">Carnallis</div></div><span class="status-badge red">Zerado</span></div>
-          <div class="card-deadline">📋 <span style="color:var(--muted)">Sem material</span></div>
-          <div class="card-note red">🚨 Sem material. Acionar gravação urgente.</div>
-          <div class="alert-tag">🚨 Gravação urgente</div>
-        </div>
-
-        <div class="client-card red" data-days="0" data-max="7">
-          <div class="card-top"><div><div class="client-name">Domio</div></div><span class="status-badge red">Zerado</span></div>
-          <div class="card-deadline">📋 <span style="color:var(--muted)">Sem material</span></div>
-          <div class="card-note red">🚨 Sem material. Acionar gravação urgente.</div>
-          <div class="alert-tag">🚨 Gravação urgente</div>
-        </div>
-
-        <div class="client-card red" data-days="0" data-max="7">
-          <div class="card-top"><div><div class="client-name">Innovare | Construção Seca</div></div><span class="status-badge red">Zerado</span></div>
-          <div class="card-deadline">📋 <span style="color:var(--muted)">Sem material</span></div>
-          <div class="card-note red">🚨 Sem material. Retomar gravação — intercalar Juliana/Ciro + obras.</div>
-          <div class="alert-tag">🚨 Gravação urgente</div>
+        <div class="client-card red" data-days="1" data-max="7">
+          <div class="card-top"><div><div class="client-name">ABM Plano de Vida</div></div><span class="status-badge red">Crítico</span></div>
+          <div class="card-deadline">📅 Post hoje + <span class="deadline-date">amanhã 27/10</span></div>
+          <div class="card-note red">🚨 2 vídeos gravados — um sai hoje, outro amanhã. Zera na quarta. Agendar nova gravação urgente.</div>
+          <div class="alert-tag">🚨 Zera após 27/10</div>
         </div>
       </div>
 
-      <!-- SEM CONTINUIDADE -->
+      <!-- ZERADO / SEM MATERIAL -->
       <div class="kanban-col">
         <div class="kanban-col-header">
           <div class="col-dot gray"></div>
-          <span class="col-title gray">Sem continuidade</span>
-          <span class="col-count gray">1</span>
+          <span class="col-title gray">Zerado — Sem material</span>
+          <span class="col-count gray">2</span>
         </div>
 
         <div class="client-card gray" style="opacity:1;transform:none">
-          <div class="card-top"><div><div class="client-name">Capitão Peixes</div></div><span class="status-badge gray">Pausado</span></div>
-          <div class="card-deadline">📋 <span style="color:var(--muted)">Sem material</span></div>
-          <div class="card-note gray">⚫ Sem material para produção e sem continuidade prevista no projeto.</div>
+          <div class="card-top"><div><div class="client-name">Carnallis</div></div><span class="status-badge gray">Zerado</span></div>
+          <div class="card-note gray">⚫ Sem material para produção. Acionar gravação.</div>
+          <div class="alert-tag">🚨 Gravar urgente</div>
         </div>
 
-        <div class="client-card gray" style="opacity:1;transform:none;margin-top:0">
-          <div class="card-note gray" style="margin:0">🆕 <strong style="color:var(--white)">Bronze da Sheila</strong> ingressa como Social Media + Tráfego. Aguardando material inicial para produção.</div>
-          <div class="new-tag">🆕 Novo — Social Media</div>
+        <div class="client-card gray" style="opacity:1;transform:none">
+          <div class="card-top"><div><div class="client-name">Panda Hortfrut</div></div><span class="status-badge gray">Zerado</span></div>
+          <div class="card-note gray">⚫ Sem material para produção. Acionar gravação.</div>
+          <div class="alert-tag">🚨 Gravar urgente</div>
+        </div>
+
+        <div class="client-card gray" style="opacity:1;transform:none">
+          <div class="card-top"><div><div class="client-name">Innovare | Construção Seca</div></div><span class="status-badge gray">Zerado</span></div>
+          <div class="card-note gray">⚫ Sem material. Retomar intercalação Juliana/Ciro + obras.</div>
+          <div class="alert-tag">🚨 Gravar urgente</div>
+        </div>
+
+        <div class="client-card gray" style="opacity:1;transform:none">
+          <div class="card-top"><div><div class="client-name">Oficina do Wesley</div></div><span class="status-badge gray">Zerado</span></div>
+          <div class="card-note gray">⚫ Sem material para produção. Acionar gravação.</div>
+          <div class="alert-tag">🚨 Gravar urgente</div>
         </div>
       </div>
 
@@ -307,49 +303,31 @@
     <p class="section-label">Tráfego pago</p>
     <h2 class="section-title">Clientes Tráfego — Sem Produção de Conteúdo</h2>
     <div class="traffic-grid">
-
-      <div class="traffic-card upgrade">
-        <div class="traffic-name">Bronze da Sheila</div>
-        <div class="traffic-type">Tráfego → Social Media + Tráfego 🆕</div>
-        <div class="traffic-note" style="background:rgba(180,120,255,.05)">Migrou para social media. Sem material de produção ainda. Ver painel acima.</div>
-      </div>
-
       <div class="traffic-card">
         <div class="traffic-name">23 Xiaomi</div>
         <div class="traffic-type">Só tráfego</div>
         <div class="traffic-note">Gestão de tráfego pago. Sem produção de conteúdo.</div>
       </div>
-
       <div class="traffic-card">
         <div class="traffic-name">ASR Controle Ambiental</div>
         <div class="traffic-type">Só tráfego</div>
         <div class="traffic-note">Gestão de tráfego pago. Sem produção de conteúdo.</div>
       </div>
-
-      <div class="traffic-card">
-        <div class="traffic-name">Cleverson Monteiro</div>
-        <div class="traffic-type">Só tráfego</div>
-        <div class="traffic-note">Gestão de tráfego pago. Rodando normalmente.</div>
-      </div>
-
-      <div class="traffic-card">
-        <div class="traffic-name">Dra. Juliana</div>
-        <div class="traffic-type">Só tráfego</div>
-        <div class="traffic-note">Gestão de tráfego pago. Sem produção de conteúdo.</div>
-      </div>
-
-      <div class="traffic-card">
-        <div class="traffic-name">Life Medicina</div>
-        <div class="traffic-type">Só tráfego</div>
-        <div class="traffic-note">Gestão de tráfego pago. Sem produção de conteúdo.</div>
-      </div>
-
       <div class="traffic-card">
         <div class="traffic-name">CrocCook</div>
         <div class="traffic-type">Só tráfego</div>
         <div class="traffic-note">Gestão de tráfego pago. Sem produção de conteúdo.</div>
       </div>
-
+      <div class="traffic-card">
+        <div class="traffic-name">Dra. Juliana</div>
+        <div class="traffic-type">Só tráfego</div>
+        <div class="traffic-note">Gestão de tráfego pago. Sem produção de conteúdo.</div>
+      </div>
+      <div class="traffic-card">
+        <div class="traffic-name">Life Medicina</div>
+        <div class="traffic-type">Só tráfego</div>
+        <div class="traffic-note">Gestão de tráfego pago. Sem produção de conteúdo.</div>
+      </div>
     </div>
   </div>
 </section>
@@ -385,7 +363,7 @@
 
 <footer class="footer">
   <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iQ2FtYWRhXzIiIGRhdGEtbmFtZT0iQ2FtYWRhIDIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDI1MC4zNSAyMTguMTUiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZvbnQtc2l6ZTogNzYuNzdweDsKICAgICAgfQoKICAgICAgLmNscy0xLCAuY2xzLTIsIC5jbHMtMywgLmNscy00LCAuY2xzLTUgewogICAgICAgIGZpbGw6ICNmZmY7CiAgICAgIH0KCiAgICAgIC5jbHMtMSwgLmNscy0yLCAuY2xzLTQsIC5jbHMtNSB7CiAgICAgICAgZm9udC1mYW1pbHk6IE5lZ3JpdGFQcm8sICdOZWdyaXRhIFBybyc7CiAgICAgIH0KCiAgICAgIC5jbHMtMiB7CiAgICAgICAgZm9udC1zaXplOiA3Ni43N3B4OwogICAgICB9CgogICAgICAuY2xzLTMgewogICAgICAgIGZvbnQtZmFtaWx5OiBTRlByb0Rpc3BsYXktUmVndWxhciwgJ1NGIFBybyBEaXNwbGF5JzsKICAgICAgICBmb250LXNpemU6IDI1LjQ4cHg7CiAgICAgIH0KCiAgICAgIC5jbHMtNCB7CiAgICAgICAgZm9udC1zaXplOiAxMTQuNzZweDsKICAgICAgfQoKICAgICAgLmNscy02IHsKICAgICAgICBmaWxsOiAjMDBmZjAxOwogICAgICAgIGZpbGwtcnVsZTogZXZlbm9kZDsKICAgICAgfQoKICAgICAgLmNscy01IHsKICAgICAgICBmb250LXNpemU6IDExNC43NnB4OwogICAgICB9CiAgICA8L3N0eWxlPgogIDwvZGVmcz4KICA8ZyBpZD0iQ2FtYWRhXzEtMiIgZGF0YS1uYW1lPSJDYW1hZGEgMSI+CiAgICA8Zz4KICAgICAgPHRleHQgY2xhc3M9ImNscy01IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMi4yIDE2MC42KSByb3RhdGUoLTcuMTkpIj48dHNwYW4geD0iMCIgeT0iMCI+TTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDk4LjA3IDE1MC40Mykgcm90YXRlKC43KSI+PHRzcGFuIHg9IjAiIHk9IjAiPms8L3RzcGFuPjwvdGV4dD4KICAgICAgPHRleHQgY2xhc3M9ImNscy01IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNTguOCAxNTEuMzkpIHJvdGF0ZSg2LjQ4KSI+PHRzcGFuIHg9IjAiIHk9IjAiPnQ8L3RzcGFuPjwvdGV4dD4KICAgICAgPHRleHQgY2xhc3M9ImNscy00IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMDUuNzUgMTU3LjAzKSByb3RhdGUoMTAuNDEpIj48dHNwYW4geD0iMCIgeT0iMCI+ITwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDY5LjExIDY3LjY5KSByb3RhdGUoLTMuMDUpIj48dHNwYW4geD0iMCIgeT0iMCI+QTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDExMi4yOCA2NS4zNSkgcm90YXRlKC43MykiPjx0c3BhbiB4PSIwIiB5PSIwIj5xPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTUxLjYxIDY1Ljc5KSByb3RhdGUoNC40NSkiPjx0c3BhbiB4PSIwIiB5PSIwIj51PC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTkxLjI3IDY5LjExKSByb3RhdGUoNy4xMSkiPjx0c3BhbiB4PSIwIiB5PSIwIj5pPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjA4LjExIDcxLjIxKSByb3RhdGUoOC41OSkiPjx0c3BhbiB4PSIwIiB5PSIwIj4sPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEuMzEgMjA3LjM0KSI+PHRzcGFuIHg9IjAiIHk9IjAiPk08L3RzcGFuPjwvdGV4dD4KICAgICAgPHRleHQgY2xhc3M9ImNscy0zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMi4wOSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+YTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ0Ljg1IDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj5yPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTIuNjcgMjA3LjM0KSI+PHRzcGFuIHg9IjAiIHk9IjAiPms8L3RzcGFuPjwvdGV4dD4KICAgICAgPHRleHQgY2xhc3M9ImNscy0zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2NC4zOSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+ZTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDc3LjQyIDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj50PC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODUuMDcgMjA3LjM0KSI+PHRzcGFuIHg9IjAiIHk9IjAiPmk8L3RzcGFuPjwvdGV4dD4KICAgICAgPHRleHQgY2xhc3M9ImNscy0zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5MC4yNCAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+bjwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwMy42NCAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+ZzwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDExNy42MSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+IDwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyMi44MSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+RTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEzNi44NSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+czwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE0OC42OCAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+dDwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE1Ni4zMyAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+cjwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE2My45IDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj5hPC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTc2LjY3IDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj50PC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTgzLjk0IDIwNy4zNCkiPjx0c3BhbiB4PSIwIiB5PSIwIj7DqTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE5Ni45NyAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+ZzwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIxMC45NCAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+aTwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIxNi4xMSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+YzwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIyOC44NSAyMDcuMzQpIj48dHNwYW4geD0iMCIgeT0iMCI+bzwvdHNwYW4+PC90ZXh0PgogICAgICA8cGF0aCBjbGFzcz0iY2xzLTYiIGQ9Ik00MS43NiwzMi4wNmM1LjgtLjU5LDEwLjg2LDMuNTMsMTEuNDUsOS4zMy41OCw1LjcyLTMuNTQsMTAuNzktOS4zNCwxMS4zOC01LjcyLjU4LTEwLjc5LTMuNTQtMTEuMzctOS4yNi0uNTktNS44LDMuNTMtMTAuODYsOS4yNi0xMS40NFpNNDAuNTIsMTkuODZjMTIuNjUtMS4yOSwyMy44NSw3Ljg0LDI1LjE1LDIwLjQ5LjQ1LDQuMzctLjM0LDguNTYtMi4xLDEyLjI0bC0xNi4xOCwzNC41Mi0yMi43NS0zMC41NWMtMi40Ni0zLjI1LTQuMTYtNy4xOC00LjYtMTEuNTUtMS4yOS0xMi42NSw3LjkxLTIzLjg2LDIwLjQ5LTI1LjE1WiIvPgogICAgPC9nPgogIDwvZz4KPC9zdmc+" alt="Aqui, Mkt!">
-  <p class="footer-sub">Marketing Estratégico · Relatório Semanal · 20/10/2026<br>Preparado por Maicon para Caio Ribeiro</p>
+  <p class="footer-sub">Marketing Estratégico · Relatório Semanal · 26/10/2026<br>Preparado por Maicon para Caio Ribeiro</p>
 </footer>
 
 <script>
